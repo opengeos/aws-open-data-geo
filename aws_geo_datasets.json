@@ -5,6 +5,7 @@
         "ARN":"arn:aws:s3:::amazonia-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"http:\/\/www.inpe.br\/amazonia1",
         "Contact":"https:\/\/lists.osgeo.org\/mailman\/listinfo\/cbers-pds",
         "ManagedBy":"[AMS Kepler](https:\/\/amskepler.com\/)",
@@ -21,8 +22,7 @@
             "disaster response",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Analysis Ready Sentinel-1 Backscatter Imagery - Sentinel-1 RTC tiled data and metadata in a S3 bucket",
@@ -30,6 +30,7 @@
         "ARN":"arn:aws:s3:::sentinel-s1-rtc-indigo",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/sentinel-s1-rtc-indigo-docs.s3-us-west-2.amazonaws.com\/index.html",
         "Contact":"For questions regarding data methodology or delivery, contact sentinel1@indigoag",
         "ManagedBy":"[Indigo Ag, Inc.](https:\/\/www.indigoag.com\/)",
@@ -47,8 +48,7 @@
             "cog",
             "stac",
             "synthetic aperture radar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"ArcticDEM - ArcticDEM DEM Mosaics",
@@ -56,6 +56,7 @@
         "ARN":"arn:aws:s3:::pgc-opendata-dems\/arcticdem\/mosaics\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.pgc.umn.edu\/data\/arcticdem\/",
         "Contact":"pgc-support@umn.edu",
         "ManagedBy":"[Polar Geospatial Center](http:\/\/www.pgc.umn.edu\/)",
@@ -71,8 +72,7 @@
             "satellite imagery",
             "cog",
             "stac"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"ArcticDEM - ArcticDEM DEM Strips",
@@ -80,6 +80,7 @@
         "ARN":"arn:aws:s3:::pgc-opendata-dems\/arcticdem\/strips\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.pgc.umn.edu\/data\/arcticdem\/",
         "Contact":"pgc-support@umn.edu",
         "ManagedBy":"[Polar Geospatial Center](http:\/\/www.pgc.umn.edu\/)",
@@ -95,8 +96,7 @@
             "satellite imagery",
             "cog",
             "stac"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Atmospheric Models from M\u00e9t\u00e9o-France",
@@ -104,6 +104,7 @@
         "ARN":"arn:aws:s3:::mf-nwp-models",
         "Region":"eu-west-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/mf-models-on-aws.org",
         "Contact":"contact@openmeteodata.com",
         "ManagedBy":"[OpenMeteoData](https:\/\/openmeteodata.com)",
@@ -119,8 +120,7 @@
             "meteorological",
             "model",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"CBERS on AWS - CBERS imagery (COG files, Requester Pays Bucket)",
@@ -128,6 +128,7 @@
         "ARN":"arn:aws:s3:::cbers-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":true,
         "Documentation":"https:\/\/github.com\/fredliporace\/cbers-on-aws",
         "Contact":"https:\/\/lists.osgeo.org\/mailman\/listinfo\/cbers-pds",
         "ManagedBy":"[AMS Kepler](https:\/\/amskepler.com\/)",
@@ -144,8 +145,7 @@
             "disaster response",
             "stac",
             "cog"
-        ],
-        "RequesterPays":true
+        ]
     },
     {
         "Name":"CMAS Data Warehouse - AMET Data",
@@ -153,6 +153,7 @@
         "ARN":"arn:aws:s3:::cmas-amet",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/dataverse.unc.edu\/dataverse\/cmascenter",
         "Contact":"cmas@unc.edu",
         "ManagedBy":"[CMAS CENTER](https:\/\/cmascenter.org\/)",
@@ -166,8 +167,7 @@
             "environmental",
             "sustainability",
             "climate"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"CMAS Data Warehouse - CMAQ 2016 Modeling Platform",
@@ -175,6 +175,7 @@
         "ARN":"arn:aws:s3:::cmas-cmaq-modeling-platform-2016",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/dataverse.unc.edu\/dataverse\/cmascenter",
         "Contact":"cmas@unc.edu",
         "ManagedBy":"[CMAS CENTER](https:\/\/cmascenter.org\/)",
@@ -188,8 +189,7 @@
             "environmental",
             "sustainability",
             "climate"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"CMAS Data Warehouse - CMAQ CONUS-2 Benchmark Data",
@@ -197,6 +197,7 @@
         "ARN":"arn:aws:s3:::cmas-cmaq-conus2-benchmark",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/dataverse.unc.edu\/dataverse\/cmascenter",
         "Contact":"cmas@unc.edu",
         "ManagedBy":"[CMAS CENTER](https:\/\/cmascenter.org\/)",
@@ -210,8 +211,7 @@
             "environmental",
             "sustainability",
             "climate"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"CMAS Data Warehouse - CMAQ Data",
@@ -219,6 +219,7 @@
         "ARN":"arn:aws:s3:::cmas-cmaq",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/dataverse.unc.edu\/dataverse\/cmascenter",
         "Contact":"cmas@unc.edu",
         "ManagedBy":"[CMAS CENTER](https:\/\/cmascenter.org\/)",
@@ -232,8 +233,7 @@
             "environmental",
             "sustainability",
             "climate"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"CMAS Data Warehouse - EQUATES CONUS-1 Benchmark Data with MCIP data compressed using nc4 compression",
@@ -241,6 +241,7 @@
         "ARN":"arn:aws:s3:::cmas-equates-conus1-benchmark",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/dataverse.unc.edu\/dataverse\/cmascenter",
         "Contact":"cmas@unc.edu",
         "ManagedBy":"[CMAS CENTER](https:\/\/cmascenter.org\/)",
@@ -254,8 +255,7 @@
             "environmental",
             "sustainability",
             "climate"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"CMAS Data Warehouse - EQUATES EPA\u2019s Air QUAlity TimE Series Project Data",
@@ -263,6 +263,7 @@
         "ARN":"arn:aws:s3:::cmas-equates",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/dataverse.unc.edu\/dataverse\/cmascenter",
         "Contact":"cmas@unc.edu",
         "ManagedBy":"[CMAS CENTER](https:\/\/cmascenter.org\/)",
@@ -276,8 +277,7 @@
             "environmental",
             "sustainability",
             "climate"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"CMAS Data Warehouse - MCIP Input and Output Data",
@@ -285,6 +285,7 @@
         "ARN":"arn:aws:s3:::cmas-mcip",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/dataverse.unc.edu\/dataverse\/cmascenter",
         "Contact":"cmas@unc.edu",
         "ManagedBy":"[CMAS CENTER](https:\/\/cmascenter.org\/)",
@@ -298,8 +299,7 @@
             "environmental",
             "sustainability",
             "climate"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"CMAS Data Warehouse - SMOKE 2016 Modeling Platform",
@@ -307,6 +307,7 @@
         "ARN":"arn:aws:s3:::cmas-smoke-modeling-platform-2016",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/dataverse.unc.edu\/dataverse\/cmascenter",
         "Contact":"cmas@unc.edu",
         "ManagedBy":"[CMAS CENTER](https:\/\/cmascenter.org\/)",
@@ -320,8 +321,7 @@
             "environmental",
             "sustainability",
             "climate"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"CMIP6 GCMs downscaled using WRF",
@@ -329,6 +329,7 @@
         "ARN":"arn:aws:s3:::wrf-cmip6-noversioning",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/dept.atmos.ucla.edu\/alexhall\/downscaling-cmip6",
         "Contact":"s.rahimi@ucla.edu",
         "ManagedBy":"[UCLA Center for Climate Science](https:\/\/dept.atmos.ucla.edu\/)",
@@ -345,8 +346,7 @@
             "oceans",
             "simulations",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Capella Space Synthetic Aperture Radar (SAR) Open Dataset - Capella Space Open Data in COG format",
@@ -354,6 +354,7 @@
         "ARN":"arn:aws:s3:::capella-open-data\/data\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"Documentation is available under [support.capellaspace.com](https:\/\/support.cape",
         "Contact":"opendata@capellaspace.com",
         "ManagedBy":"[Capella Space](https:\/\/www.capellaspace.com\/)",
@@ -369,8 +370,7 @@
             "image processing",
             "computer vision",
             "synthetic aperture radar"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Co-Produced Climate Data to Support California's Resilience Investments",
@@ -378,6 +378,7 @@
         "ARN":"arn:aws:s3:::cadcat",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/analytics.cal-adapt.org\/data\/",
         "Contact":"analytics@cal-adapt.org",
         "ManagedBy":"Cal-Adapt Analytics Engine https:\/\/analytics.cal-adapt.org\/",
@@ -395,8 +396,7 @@
             "simulations",
             "weather",
             "zarr"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Coupled Model Intercomparison Project 6 - Netcdf formatted data managed by the Earth System Grid Federation",
@@ -404,6 +404,7 @@
         "ARN":"arn:aws:s3:::esgf-world",
         "Region":"us-east-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/pangeo-data.github.io\/pangeo-cmip6-cloud\/, https:\/\/www.wcrp-climate.org\/",
         "Contact":"If you have any feedback on the CMIP6 data available on AWS please email sustain",
         "ManagedBy":"ESGF and Pangeo",
@@ -420,8 +421,7 @@
             "oceans",
             "simulations",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Coupled Model Intercomparison Project 6 - Zarr formatted data",
@@ -429,6 +429,7 @@
         "ARN":"arn:aws:s3:::cmip6-pds",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/pangeo-data.github.io\/pangeo-cmip6-cloud\/, https:\/\/www.wcrp-climate.org\/",
         "Contact":"If you have any feedback on the CMIP6 data available on AWS please email sustain",
         "ManagedBy":"ESGF and Pangeo",
@@ -445,8 +446,7 @@
             "oceans",
             "simulations",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Coupled Model Intercomparison Project Phase 5 (CMIP5) University of Wisconsin-Madison Probabilistic Downscaling Dataset",
@@ -454,6 +454,7 @@
         "ARN":"arn:aws:s3:::noaa-nws-uwpd-cmip5-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"http:\/\/djlorenz.github.io\/downscaling2\/main.html",
         "Contact":"For questions about data development, quality and content, please contact Dr. Da",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -470,8 +471,7 @@
             "oceans",
             "water",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Crowdsourced Bathymetry - Crowdsourced bathymetry data",
@@ -479,6 +479,7 @@
         "ARN":"arn:aws:s3:::noaa-bathymetry-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/noaa-bathymetry-pds.s3.amazonaws.com\/readme.html",
         "Contact":"mb.info@noaa.gov",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -489,8 +490,7 @@
             "earth observation",
             "sustainability",
             "oceans"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"DOE's Water Power Technology Office's (WPTO) US Wave dataset - 32 Year Wave Hindcast (1979-2010) for the Atlantic Coast of the United States at",
@@ -498,6 +498,7 @@
         "ARN":"arn:aws:s3:::wpto-pds-us-wave\/v1.0.0\/Atlantic\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/US_Wave.md",
         "Contact":"Levi.Kilcher@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -511,8 +512,7 @@
             "meteorological",
             "water",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"DOE's Water Power Technology Office's (WPTO) US Wave dataset - 32 Year Wave Hindcast (1979-2010) for the Pacific Ocean around US state of Hawai",
@@ -520,6 +520,7 @@
         "ARN":"arn:aws:s3:::wpto-pds-us-wave\/v1.0.0\/Hawaii\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/US_Wave.md",
         "Contact":"Levi.Kilcher@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -533,8 +534,7 @@
             "meteorological",
             "water",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"DOE's Water Power Technology Office's (WPTO) US Wave dataset - 32 Year Wave Hindcast (1979-2010) for the West Coast of the United States at 3-h",
@@ -542,6 +542,7 @@
         "ARN":"arn:aws:s3:::wpto-pds-us-wave\/v1.0.0\/West_Coast\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/US_Wave.md",
         "Contact":"Levi.Kilcher@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -555,8 +556,7 @@
             "meteorological",
             "water",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"DOE's Water Power Technology Office's (WPTO) US Wave dataset - 32 Year Wave Hindcast (1979-2010) from select virtual buoys along the Atlantic C",
@@ -564,6 +564,7 @@
         "ARN":"arn:aws:s3:::wpto-pds-us-wave\/v1.0.0\/virtual_buoy\/Atlantic\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/US_Wave.md",
         "Contact":"Levi.Kilcher@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -577,8 +578,7 @@
             "meteorological",
             "water",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"DOE's Water Power Technology Office's (WPTO) US Wave dataset - 32 Year Wave Hindcast (1979-2010) from select virtual buoys along the West Coast",
@@ -586,6 +586,7 @@
         "ARN":"arn:aws:s3:::wpto-pds-us-wave\/v1.0.0\/virtual_buoy\/West_Coast\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/US_Wave.md",
         "Contact":"Levi.Kilcher@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -599,8 +600,7 @@
             "meteorological",
             "water",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"DOE's Water Power Technology Office's (WPTO) US Wave dataset - DOE's Water Power Technology Office's Wave Hindcast datasets",
@@ -608,6 +608,7 @@
         "ARN":"arn:aws:s3:::wpto-pds-us-wave\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/US_Wave.md",
         "Contact":"Levi.Kilcher@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -621,8 +622,7 @@
             "meteorological",
             "water",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"DOE's Water Power Technology Office's (WPTO) US Wave dataset - [HSDS](https:\/\/github.com\/NREL\/hsds-examples) US Virtual Buoy domains",
@@ -630,6 +630,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-hsds\/nrel\/US_wave\/virtual_buoy\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/US_Wave.md",
         "Contact":"Levi.Kilcher@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -643,8 +644,7 @@
             "meteorological",
             "water",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"DOE's Water Power Technology Office's (WPTO) US Wave dataset - [HSDS](https:\/\/github.com\/NREL\/hsds-examples) US Wave domains",
@@ -652,6 +652,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-hsds\/nrel\/US_wave\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/US_Wave.md",
         "Contact":"Levi.Kilcher@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -665,8 +666,7 @@
             "meteorological",
             "water",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [AlphaBuilding - Synthetic Dataset](https:\/\/lbnl-eta.github.io\/AlphaBuilding-Syn",
@@ -674,6 +674,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/building_synthetic_dataset\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -688,8 +689,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [BUTTER - Empirical Deep Learning Dataset](https:\/\/github.com\/openEDI\/documentat",
@@ -697,6 +697,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/butter\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -711,8 +712,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [Data Catalog of the Open Energy Data Initiative (OEDI)](https:\/\/data.openei.org",
@@ -720,6 +720,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -734,8 +735,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [Distributed Generation Market Demand (dGen) model](https:\/\/github.com\/openEDI\/d",
@@ -743,6 +743,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/dgen\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -757,8 +758,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [End-Use Load Profiles for the U.S. Building Stock](https:\/\/www.nrel.gov\/buildin",
@@ -766,6 +766,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/nrel-pds-building-stock\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -780,8 +781,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [Lawrence Berkeley National Laboratory (LBNL) AlphaBuilding-SyntheticDataset](ht",
@@ -789,6 +789,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/building_synthetic_dataset\/A_Synthetic_Building_Operation_Dataset.h5",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -803,8 +804,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [Lawrence Berkeley National Laboratory (LBNL) Tracking the Sun](https:\/\/github.c",
@@ -812,6 +812,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/tracking-the-sun\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -826,8 +827,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [NREL's Annual Technology Baseline (ATB)](https:\/\/atb.nrel.gov)",
@@ -835,6 +835,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/ATB\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -849,8 +850,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [National Renewable Energy Laboratory (NREL) PV Rooftop Database - (PVRDB)](http",
@@ -858,6 +858,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/pv-rooftop\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -872,8 +873,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [National Renewable Energy Laboratory (NREL) PV Rooftop Database - Puerto Rico (",
@@ -881,6 +881,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/pv-rooftop-pr\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -895,8 +896,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [Photovoltaic Data Acquisition (PVDAQ) Public Datasets](https:\/\/data.openei.org\/",
@@ -904,6 +904,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/pvdaq\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -918,8 +919,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [Synthetic Models for Advanced, Realistic Testing: Distribution systems and Scen",
@@ -927,6 +927,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/SMART-DS\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -941,8 +942,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Department of Energy's Open Energy Data Initiative (OEDI) - [University of Miami Coupled Model (UMCM) for Hurricanes Ike and Sandy](https:\/\/",
@@ -950,6 +950,7 @@
         "ARN":"arn:aws:s3:::oedi-data-lake\/umcm\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/",
         "Contact":"https:\/\/github.com\/openEDI\/documentation\/issues",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -964,8 +965,7 @@
             "model",
             "solar",
             "lidar"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Digital Earth Africa ALOS PALSAR, ALOS-2 PALSAR-2 and JERS-1 - ALOS PALSAR ALOS-2 PALSAR-2 data",
@@ -973,6 +973,7 @@
         "ARN":"arn:aws:s3:::deafrica-input-datasets\/alos_palsar_mosaic",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/ALOS_PALSAR_annual_mosa",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -991,8 +992,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa CHIRPS Rainfall - CHIRPS daily rainfall",
@@ -1000,6 +1000,7 @@
         "ARN":"arn:aws:s3:::deafrica-input-datasets\/rainfall_chirps_daily",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/CHIRPS_specs.html",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1018,8 +1019,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa CHIRPS Rainfall - CHIRPS monthly rainfall",
@@ -1027,6 +1027,7 @@
         "ARN":"arn:aws:s3:::deafrica-input-datasets\/rainfall_chirps_monthly",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/CHIRPS_specs.html",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1045,8 +1046,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa Cropland Extent Map (2019) - Cropland extent map 2019",
@@ -1054,6 +1054,7 @@
         "ARN":"arn:aws:s3:::deafrica-services\/crop_mask",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/Cropland_extent_specs.h",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1070,8 +1071,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa Fractional Cover - Fractional Cover Annual Summary data",
@@ -1079,6 +1079,7 @@
         "ARN":"arn:aws:s3:::deafrica-services\/fc_ls_summary_annual",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/Fractional_Cover_specs.",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1096,8 +1097,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa Fractional Cover - Fractional Cover data",
@@ -1105,6 +1105,7 @@
         "ARN":"arn:aws:s3:::deafrica-services\/fc_ls",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/Fractional_Cover_specs.",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1122,8 +1123,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa GeoMAD - Landsat 5 and 7 GeoMAD (Annual) data",
@@ -1131,6 +1131,7 @@
         "ARN":"arn:aws:s3:::deafrica-services\/gm_ls5_ls7_annual",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/GeoMAD_specs.html",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1148,8 +1149,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa GeoMAD - Landsat 8 GeoMAD (Annual) data",
@@ -1157,6 +1157,7 @@
         "ARN":"arn:aws:s3:::deafrica-services\/gm_ls8_annual",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/GeoMAD_specs.html",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1174,8 +1175,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa GeoMAD - Sentinel-2 GeoMAD (Annual) data",
@@ -1183,6 +1183,7 @@
         "ARN":"arn:aws:s3:::deafrica-services\/gm_s2_annual",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/GeoMAD_specs.html",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1200,8 +1201,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa GeoMAD - Sentinel-2 GeoMAD (Semi-Annual) data",
@@ -1209,6 +1209,7 @@
         "ARN":"arn:aws:s3:::deafrica-services\/gm_s2_semiannual",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/GeoMAD_specs.html",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1226,8 +1227,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa Global Mangrove Watch - Global Mangrove Watch",
@@ -1235,6 +1235,7 @@
         "ARN":"arn:aws:s3:::deafrica-input-datasets\/gmw",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/Global_Mangrove_Watch_s",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1252,8 +1253,7 @@
             "stac",
             "cog",
             "land cover"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa Landsat Collection 2 Level 2 - Landsat scenes and metadata",
@@ -1261,6 +1261,7 @@
         "ARN":"arn:aws:s3:::deafrica-landsat",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/Landsat_C2_SR_specs.htm",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1278,8 +1279,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa Sentinel-1 Radiometrically Terrain Corrected - Sentinel-1 tiles and metadata",
@@ -1287,6 +1287,7 @@
         "ARN":"arn:aws:s3:::deafrica-sentinel-1",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/Sentinel-1_specs.html",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1305,8 +1306,7 @@
             "stac",
             "cog",
             "synthetic aperture radar"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa Sentinel-2 Level-2A - Sentinel-2 scenes and metadata",
@@ -1314,6 +1314,7 @@
         "ARN":"arn:aws:s3:::deafrica-sentinel-2",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/Sentinel-2_Level-2A_spe",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1331,8 +1332,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa Water Observations from Space - Water Observations from Space All-Time Summary data",
@@ -1340,6 +1340,7 @@
         "ARN":"arn:aws:s3:::deafrica-services\/wofs_ls_summary_alltime",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/Landsat_WOfS_specs.html",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1358,8 +1359,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa Water Observations from Space - Water Observations from Space Annual Summary data",
@@ -1367,6 +1367,7 @@
         "ARN":"arn:aws:s3:::deafrica-services\/wofs_ls_summary_annual",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/Landsat_WOfS_specs.html",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1385,8 +1386,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Digital Earth Africa Water Observations from Space - Water Observations from Space data",
@@ -1394,6 +1394,7 @@
         "ARN":"arn:aws:s3:::deafrica-services\/wofs_ls",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/docs.digitalearthafrica.org\/en\/latest\/data_specs\/Landsat_WOfS_specs.html",
         "Contact":"helpdesk@digitalearthafrica.org",
         "ManagedBy":"[Digital Earth Africa](https:\/\/www.digitalearthafrica.org\/)",
@@ -1412,8 +1413,7 @@
             "deafrica",
             "stac",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"District of Columbia - Classified Point Cloud LiDAR - LAS, XML",
@@ -1421,6 +1421,7 @@
         "ARN":"arn:aws:s3:::dc-lidar-2018",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"[2015 data](https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/dc-lidar-20",
         "Contact":"dcgis@dc.gov",
         "ManagedBy":"[Washington DC government](https:\/\/dc.gov\/)",
@@ -1432,8 +1433,7 @@
             "cities",
             "us-dc",
             "disaster response"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"District of Columbia - Classified Point Cloud LiDAR - LAS, XML, SHP",
@@ -1441,6 +1441,7 @@
         "ARN":"arn:aws:s3:::dc-lidar-2015",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"[2015 data](https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/dc-lidar-20",
         "Contact":"dcgis@dc.gov",
         "ManagedBy":"[Washington DC government](https:\/\/dc.gov\/)",
@@ -1452,8 +1453,7 @@
             "cities",
             "us-dc",
             "disaster response"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Downscaled Climate Data for Alaska",
@@ -1461,6 +1461,7 @@
         "ARN":"arn:aws:s3:::wrf-ak-ar5",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"http:\/\/ckan.snap.uaf.edu\/dataset\/historical-and-projected-dynamically-downscaled",
         "Contact":"http:\/\/directory.iarc.uaf.edu\/peter-bieniek",
         "ManagedBy":"Scenarios Network for Alaska + Arctic Planning at the International Arctic Resea",
@@ -1476,8 +1477,7 @@
             "weather",
             "aws-pds",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"EPA Risk-Screening Environmental Indicators",
@@ -1485,6 +1485,7 @@
         "ARN":"arn:aws:s3:::epa-rsei-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/epa-rsei-pds",
         "Contact":"https:\/\/www.epa.gov\/rsei\/forms\/contact-us-about-rsei-model",
         "ManagedBy":"[Environmental Protection Agency](https:\/\/www.epa.gov\/rsei\/)",
@@ -1494,8 +1495,7 @@
             "aws-pds",
             "environmental",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"ESA WorldCover",
@@ -1503,6 +1503,7 @@
         "ARN":"arn:aws:s3:::esa-worldcover",
         "Region":"eu-central-1",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"Documentation is available [here](https:\/\/esa-worldcover.org\/en\/data-access).",
         "Contact":"https:\/\/esa-worldcover.org\/en\/contact",
         "ManagedBy":"[VITO](https:\/\/vito.be)",
@@ -1524,8 +1525,7 @@
             "land use",
             "machine learning",
             "stac"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Earth Observation Data Cubes for Brazil - Earth Observation Data Cubes for Brazil - CBERS 4",
@@ -1533,6 +1533,7 @@
         "ARN":"arn:aws:s3:::bdc-cbers",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"http:\/\/brazildatacube.org\/en\/home-page-2\/",
         "Contact":"brazildatacube@inpe.br",
         "ManagedBy":"[INPE - Brazil Data Cube](http:\/\/brazildatacube.org\/)",
@@ -1548,8 +1549,7 @@
             "cog",
             "stac",
             "aws-pds"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Earth Observation Data Cubes for Brazil - Earth Observation Data Cubes for Brazil - Sentinel 2A\/2B",
@@ -1557,6 +1557,7 @@
         "ARN":"arn:aws:s3:::bdc-sentinel-2",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"http:\/\/brazildatacube.org\/en\/home-page-2\/",
         "Contact":"brazildatacube@inpe.br",
         "ManagedBy":"[INPE - Brazil Data Cube](http:\/\/brazildatacube.org\/)",
@@ -1572,8 +1573,7 @@
             "cog",
             "stac",
             "aws-pds"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Earth Radio Occultation",
@@ -1581,6 +1581,7 @@
         "ARN":"arn:aws:s3:::gnss-ro-data",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"http:\/\/github.com\/gnss-ro\/aws-opendata",
         "Contact":"Stephen Leroy (sleroy@aer.com)",
         "ManagedBy":"Atmospheric and Environmental Research, Inc.",
@@ -1594,8 +1595,7 @@
             "global",
             "signal processing",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Finnish Meteorological Institute Weather Radar Data - Radar data as GeoTIFF",
@@ -1603,6 +1603,7 @@
         "ARN":"arn:aws:s3:::fmi-opendata-radar-geotiff",
         "Region":"eu-west-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"http:\/\/en.ilmatieteenlaitos.fi\/radar-data-on-aws-s3",
         "Contact":"avoin-data@fmi.fi",
         "ManagedBy":"[Finnish Meteorological Institute](https:\/\/www.ilmatieteenlaitos.fi\/)",
@@ -1615,8 +1616,7 @@
             "weather",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Finnish Meteorological Institute Weather Radar Data - Volume data as HDF5",
@@ -1624,6 +1624,7 @@
         "ARN":"arn:aws:s3:::fmi-opendata-radar-volume-hdf5",
         "Region":"eu-west-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"http:\/\/en.ilmatieteenlaitos.fi\/radar-data-on-aws-s3",
         "Contact":"avoin-data@fmi.fi",
         "ManagedBy":"[Finnish Meteorological Institute](https:\/\/www.ilmatieteenlaitos.fi\/)",
@@ -1636,8 +1637,7 @@
             "weather",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region).",
@@ -1645,6 +1645,7 @@
         "ARN":"arn:aws:s3:::gbif-open-data-af-south-1",
         "Region":"af-south-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"Documentation can be found [here](https:\/\/github.com\/gbif\/occurrence\/blob\/master",
         "Contact":"helpdesk@gbif.org",
         "ManagedBy":"The Global Biodiversity Information Facility ([GBIF](https:\/\/www.gbif.org))",
@@ -1657,8 +1658,7 @@
             "bioinformatics",
             "conservation",
             "life sciences"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (ap-southeast-2 region).",
@@ -1666,6 +1666,7 @@
         "ARN":"arn:aws:s3:::gbif-open-data-ap-southeast-2",
         "Region":"ap-southeast-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"Documentation can be found [here](https:\/\/github.com\/gbif\/occurrence\/blob\/master",
         "Contact":"helpdesk@gbif.org",
         "ManagedBy":"The Global Biodiversity Information Facility ([GBIF](https:\/\/www.gbif.org))",
@@ -1678,8 +1679,7 @@
             "bioinformatics",
             "conservation",
             "life sciences"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (eu-central-1 region).",
@@ -1687,6 +1687,7 @@
         "ARN":"arn:aws:s3:::gbif-open-data-eu-central-1",
         "Region":"eu-central-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"Documentation can be found [here](https:\/\/github.com\/gbif\/occurrence\/blob\/master",
         "Contact":"helpdesk@gbif.org",
         "ManagedBy":"The Global Biodiversity Information Facility ([GBIF](https:\/\/www.gbif.org))",
@@ -1699,8 +1700,7 @@
             "bioinformatics",
             "conservation",
             "life sciences"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (sa-east-1 region).",
@@ -1708,6 +1708,7 @@
         "ARN":"arn:aws:s3:::gbif-open-data-sa-east-1",
         "Region":"sa-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"Documentation can be found [here](https:\/\/github.com\/gbif\/occurrence\/blob\/master",
         "Contact":"helpdesk@gbif.org",
         "ManagedBy":"The Global Biodiversity Information Facility ([GBIF](https:\/\/www.gbif.org))",
@@ -1720,8 +1721,7 @@
             "bioinformatics",
             "conservation",
             "life sciences"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (us-east-1 region).",
@@ -1729,6 +1729,7 @@
         "ARN":"arn:aws:s3:::gbif-open-data-us-east-1",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"Documentation can be found [here](https:\/\/github.com\/gbif\/occurrence\/blob\/master",
         "Contact":"helpdesk@gbif.org",
         "ManagedBy":"The Global Biodiversity Information Facility ([GBIF](https:\/\/www.gbif.org))",
@@ -1741,8 +1742,7 @@
             "bioinformatics",
             "conservation",
             "life sciences"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"HIRLAM Weather Model - Pressure GRIB files",
@@ -1750,6 +1750,7 @@
         "ARN":"arn:aws:s3:::fmi-opendata-rcrhirlam-pressure-grib",
         "Region":"eu-west-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"http:\/\/en.ilmatieteenlaitos.fi\/open-data-on-aws-s3",
         "Contact":"avoin-data@fmi.fi",
         "ManagedBy":"[Finnish Meteorological Institute](https:\/\/www.ilmatieteenlaitos.fi\/)",
@@ -1763,8 +1764,7 @@
             "weather",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"HIRLAM Weather Model - Surface GRIB files",
@@ -1772,6 +1772,7 @@
         "ARN":"arn:aws:s3:::fmi-opendata-rcrhirlam-surface-grib",
         "Region":"eu-west-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"http:\/\/en.ilmatieteenlaitos.fi\/open-data-on-aws-s3",
         "Contact":"avoin-data@fmi.fi",
         "ManagedBy":"[Finnish Meteorological Institute](https:\/\/www.ilmatieteenlaitos.fi\/)",
@@ -1785,8 +1786,7 @@
             "weather",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"High Resolution Downscaled Climate Data for Southeast Alaska",
@@ -1794,6 +1794,7 @@
         "ARN":"arn:aws:s3:::wrf-se-ak-ar5",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.sciencebase.gov\/catalog\/item\/5f93658882ce720ee2d598a7",
         "Contact":"http:\/\/directory.iarc.uaf.edu\/richard-lader",
         "ManagedBy":"Scenarios Network for Alaska + Arctic Planning at the International Arctic Resea",
@@ -1809,8 +1810,7 @@
             "weather",
             "aws-pds",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"JMA Himawari-8\/9 - Himawari-8 Imagery",
@@ -1818,6 +1818,7 @@
         "ARN":"arn:aws:s3:::noaa-himawari8",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.data.jma.go.jp\/mscweb\/en\/himawari89\/cloud_service\/cloud_service.html",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -1833,8 +1834,7 @@
             "sustainability",
             "disaster response",
             "satellite imagery"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"JMA Himawari-8\/9 - Himawari-9 Imagery",
@@ -1842,6 +1842,7 @@
         "ARN":"arn:aws:s3:::noaa-himawari9",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.data.jma.go.jp\/mscweb\/en\/himawari89\/cloud_service\/cloud_service.html",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -1857,8 +1858,7 @@
             "sustainability",
             "disaster response",
             "satellite imagery"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Landsat 8 - Scenes and metadata",
@@ -1866,6 +1866,7 @@
         "ARN":"arn:aws:s3:::landsat-pds",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/landsat-pds",
         "Contact":"https:\/\/lists.osgeo.org\/mailman\/listinfo\/landsat-pds",
         "ManagedBy":"[Planet](https:\/\/www.planet.com\/)",
@@ -1880,8 +1881,7 @@
             "natural resource",
             "sustainability",
             "disaster response"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Low Altitude Disaster Imagery (LADI) Dataset",
@@ -1889,6 +1889,7 @@
         "ARN":"arn:aws:s3:::ladi",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/LADI-Dataset\/ladi-overview",
         "Contact":"ladi-dataset-admin@mit.edu",
         "ManagedBy":"[MIT Beaver Works](https:\/\/beaverworks.ll.mit.edu\/)",
@@ -1914,8 +1915,7 @@
             "transportation",
             "urban",
             "water"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Maxar Open Data Program",
@@ -1923,6 +1923,7 @@
         "ARN":"arn:aws:s3:::maxar-opendata",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.maxar.com\/open-data",
         "Contact":"https:\/\/www.maxar.com\/open-data",
         "ManagedBy":"[Maxar](https:\/\/www.maxar.com\/)",
@@ -1936,8 +1937,7 @@
             "sustainability",
             "cog",
             "stac"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NASA \/ USGS Europa Controlled Observation Mosaics",
@@ -1945,6 +1945,7 @@
         "ARN":"arn:aws:s3:::astrogeo-ard\/jupiter\/europa\/galileo_voyager\/usgs_controlled_mosaics\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/stac.astrogeology.usgs.gov\/docs\/data\/jupiter\/europa\/galileo_sequence_mos",
         "Contact":"https:\/\/answers.usgs.gov\/",
         "ManagedBy":"[NASA](https:\/\/www.nasa.gov)",
@@ -1955,8 +1956,7 @@
             "satellite imagery",
             "stac",
             "cog"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NASA \/ USGS Europa Controlled Observations",
@@ -1964,6 +1964,7 @@
         "ARN":"arn:aws:s3:::astrogeo-ard\/jupiter\/europa\/galileo_voyager\/usgs_controlled_observations\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/stac.astrogeology.usgs.gov\/docs\/data\/jupiter\/europa\/galileo_individual_i",
         "Contact":"https:\/\/answers.usgs.gov\/",
         "ManagedBy":"[NASA](https:\/\/www.nasa.gov)",
@@ -1974,8 +1975,7 @@
             "satellite imagery",
             "stac",
             "cog"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6) - The NEX-GDDP-CMIP6 archive. Files are in NetCDF format with the [CF-1.7](https:\/",
@@ -1983,6 +1983,7 @@
         "ARN":"arn:aws:s3:::nex-gddp-cmip6",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/doi.org\/10.7917\/OFSG3345",
         "Contact":"support@nccs.nasa.gov",
         "ManagedBy":"[NASA](https:\/\/www.nasa.gov)",
@@ -2004,8 +2005,7 @@
             "air temperature",
             "NASA Center for Climate Simulation (NCCS)",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6) - The NEX-GDDP-CMIP6-COG archive. Files are in [Cloud-Optimized GeoTiff](https:\/\/w",
@@ -2013,6 +2013,7 @@
         "ARN":"arn:aws:s3:::nex-gddp-cmip6-cog",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/doi.org\/10.7917\/OFSG3345",
         "Contact":"support@nccs.nasa.gov",
         "ManagedBy":"[NASA](https:\/\/www.nasa.gov)",
@@ -2034,8 +2035,7 @@
             "air temperature",
             "NASA Center for Climate Simulation (NCCS)",
             "cog"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"NASA Prediction of Worldwide Energy Resources (POWER) - POWER's NetCDF Datastore",
@@ -2043,6 +2043,7 @@
         "ARN":"arn:aws:s3:::power-datastore",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/power.larc.nasa.gov\/docs\/",
         "Contact":"larc-power-project@mail.nasa.gov",
         "ManagedBy":"NASA",
@@ -2085,8 +2086,7 @@
             "weather",
             "zarr",
             "aws-pds"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"NASA Prediction of Worldwide Energy Resources (POWER) - POWER's Zarr Analysis Ready Data (ARD) Datasets",
@@ -2094,6 +2094,7 @@
         "ARN":"arn:aws:s3:::power-analysis-ready-datastore",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/power.larc.nasa.gov\/docs\/",
         "Contact":"larc-power-project@mail.nasa.gov",
         "ManagedBy":"NASA",
@@ -2136,8 +2137,7 @@
             "weather",
             "zarr",
             "aws-pds"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"NEXRAD on AWS - NEXRAD Level II archive data",
@@ -2145,6 +2145,7 @@
         "ARN":"arn:aws:s3:::noaa-nexrad-level2",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/noaa\/noaa-nexrad",
         "Contact":"support-level2@unidata.ucar.edu",
         "ManagedBy":"[Unidata](https:\/\/www.unidata.ucar.edu\/)",
@@ -2158,8 +2159,7 @@
             "weather",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NEXRAD on AWS - NEXRAD Level III real-time select data",
@@ -2167,6 +2167,7 @@
         "ARN":"arn:aws:s3:::unidata-nexrad-level3",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/noaa\/noaa-nexrad",
         "Contact":"support-level2@unidata.ucar.edu",
         "ManagedBy":"[Unidata](https:\/\/www.unidata.ucar.edu\/)",
@@ -2180,8 +2181,7 @@
             "weather",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Aerosol Optical Thickness",
@@ -2189,6 +2189,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-aerosol-optical-thickness-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2201,8 +2202,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - CMORPH Precip",
@@ -2210,6 +2210,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-precip-cmorph-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2222,8 +2223,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Cloud Properties ISCCP",
@@ -2231,6 +2231,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-cloud-properties-isccp-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2243,8 +2244,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Cloud Properties Polar Orbiter",
@@ -2252,6 +2252,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-cloud-properties-polar-orbiter-nasa-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2264,8 +2265,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - GPCP Precip Daily",
@@ -2273,6 +2273,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-precip-gpcp-daily-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2285,8 +2286,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - GPCP Precip Monthly",
@@ -2294,6 +2294,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-precip-gpcp-monthly-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2306,8 +2307,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Hydrological Properties",
@@ -2315,6 +2315,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-hydrological-properties-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2327,8 +2328,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - NEXRAD Precip",
@@ -2336,6 +2336,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-precip-nexrad-qpe-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2348,8 +2349,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Ocean Heat Content",
@@ -2357,6 +2357,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-ocean-heat-content-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2369,8 +2370,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Ocean Heatflux",
@@ -2378,6 +2378,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-ocean-heatflux-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2390,8 +2391,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Ocean Nearsurface Atmos Profiles",
@@ -2399,6 +2399,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-ocean-nearsurface-atmos-profiles-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2411,8 +2412,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Outgoing Longwave Radiation - Daily",
@@ -2420,6 +2420,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-outgoing-longwave-radiation-daily-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2432,8 +2433,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Outgoing Longwave Radiation - Monthly",
@@ -2441,6 +2441,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-outgoing-longwave-radiation-monthly-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2453,8 +2454,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Ozone - ESRL",
@@ -2462,6 +2462,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-ozone-esrl-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2474,8 +2475,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - PERSIANN Precip",
@@ -2483,6 +2483,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-precip-persiann-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2495,8 +2496,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Solar Spectral Irradiance",
@@ -2504,6 +2504,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-solar-spectral-irradiance-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2516,8 +2517,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Atmospheric Climate Data Records - Total Solar Irradiance",
@@ -2525,6 +2525,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-total-solar-irradiance-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2537,8 +2538,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Climate Forecast System (CFS) - Climate Forecast System (CFS) Model Data",
@@ -2546,6 +2546,7 @@
         "ARN":"arn:aws:s3:::noaa-cfs-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/cfs.ncep.noaa.gov\/",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2558,8 +2559,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Continuously Operating Reference Stations (CORS) Network (NCN)",
@@ -2567,6 +2567,7 @@
         "ARN":"arn:aws:s3:::noaa-cors-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"For more information, visit [NCN Data and Products](https:\/\/geodesy.noaa.gov\/COR",
         "Contact":"- For general inquiries about NCN data and products, email \u2709 ngs.cors at noaa.go",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2585,8 +2586,7 @@
             "post-processing",
             "RINEX",
             "survey"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Gridsat B1",
@@ -2594,6 +2594,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-gridsat-b1-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2606,8 +2607,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - MSU Brightness Temperature",
@@ -2615,6 +2615,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-msu-brit-temp-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2627,8 +2628,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Mean Layer Temperature",
@@ -2636,6 +2636,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-mean-layer-temp-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2648,8 +2649,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Mean Layer Temperature - RSS",
@@ -2657,6 +2657,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-mean-layer-temp-rss-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2669,8 +2670,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Mean Layer Temperature - UAH",
@@ -2678,6 +2678,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-mean-layer-temp-uah-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2690,8 +2691,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Mean Layer Temperature Lower Stratosphere",
@@ -2699,6 +2699,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-mean-layer-temp-lower-strat-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2711,8 +2712,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Mean Layer Temperature Upper Troposphere",
@@ -2720,6 +2720,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-mean-layer-temp-upper-trop-lower-strat-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2732,8 +2733,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Microwave Brightness Temperature",
@@ -2741,6 +2741,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-microwave-brit-temp-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2753,8 +2754,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Microwave Humidity Sounder Brightness Temperature",
@@ -2762,6 +2762,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-microwave-humidity-sounder-brit-temp-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2774,8 +2775,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Microwave Imager Brightness Temperature - CSU",
@@ -2783,6 +2783,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-microwave-imager-brit-temp-csu-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2795,8 +2796,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Microwave Imager Brightness Temperature - RSS",
@@ -2804,6 +2804,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-microwave-imager-brit-temp-rss-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2816,8 +2817,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Microwave Temperature Sounder Brightness Temperature",
@@ -2825,6 +2825,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-microwave-temp-sounder-brit-temp-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2837,8 +2838,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Polar Orbiter Radiances and Cloud Properties - NASA",
@@ -2846,6 +2846,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-radiances-and-cloud-properties-polar-orbiter-nasa-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2858,8 +2859,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Polar Pathfinder",
@@ -2867,6 +2867,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-polar-pathfinder-fcdr-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2879,8 +2880,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Polar Pathfinder Extended",
@@ -2888,6 +2888,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-polar-pathfinder-extended-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2900,8 +2901,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Fundamental Climate Data Records (FCDR) - Water Vapor Brightness Temperature",
@@ -2909,6 +2909,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-ir-water-vapor-brit-temp-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2921,8 +2922,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Geostationary Operational Environmental Satellites (GOES) 16, 17 & 18 - GOES-16 imagery and metadata",
@@ -2930,6 +2930,7 @@
         "ARN":"arn:aws:s3:::noaa-goes16",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/noaa\/noaa-goes16",
         "Contact":"For questions related to specific GOES Products, please visit the \"[GOES-R websi",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2945,8 +2946,7 @@
             "sustainability",
             "disaster response",
             "satellite imagery"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Geostationary Operational Environmental Satellites (GOES) 16, 17 & 18 - GOES-17 imagery and metadata",
@@ -2954,6 +2954,7 @@
         "ARN":"arn:aws:s3:::noaa-goes17",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/noaa\/noaa-goes16",
         "Contact":"For questions related to specific GOES Products, please visit the \"[GOES-R websi",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2969,8 +2970,7 @@
             "sustainability",
             "disaster response",
             "satellite imagery"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Geostationary Operational Environmental Satellites (GOES) 16, 17 & 18 - GOES-18 imagery and metadata",
@@ -2978,6 +2978,7 @@
         "ARN":"arn:aws:s3:::noaa-goes18",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/noaa\/noaa-goes16",
         "Contact":"For questions related to specific GOES Products, please visit the \"[GOES-R websi",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -2993,8 +2994,7 @@
             "sustainability",
             "disaster response",
             "satellite imagery"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Global Ensemble Forecast System (GEFS) - Project data files",
@@ -3002,6 +3002,7 @@
         "ARN":"arn:aws:s3:::noaa-gefs-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/noaa\/noaa-gefs-pds",
         "Contact":"For questions regarding data content or quality, visit [the NOAA GEFS site](http",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3014,8 +3015,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Global Ensemble Forecast System (GEFS) Re-forecast",
@@ -3023,6 +3023,7 @@
         "ARN":"arn:aws:s3:::noaa-gefs-retrospective",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/noaa-gefs-retrospective.s3.amazonaws.com\/Description_of_reforecast_data.",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3035,8 +3036,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Global Extratropical Surge and Tide Operational Forecast System (Global ESTOFS) - NOAA Global ESTOFS Water Level Forecast Guidance",
@@ -3044,6 +3044,7 @@
         "ARN":"arn:aws:s3:::noaa-gestofs-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/noaa-gestofs-pds.s3.amazonaws.com\/README.html",
         "Contact":"For questions regarding data content or quality, visit the ESTOFS site (https:\/\/",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3061,8 +3062,7 @@
             "oceans",
             "sustainability",
             "climate"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Global Forecast System (GFS) - GFS Warm Start Initial Conditions",
@@ -3070,6 +3070,7 @@
         "ARN":"arn:aws:s3:::noaa-gfs-warmstart-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.emc.ncep.noaa.gov\/emc\/pages\/numerical_forecast_systems\/gfs.php",
         "Contact":"For questions regarding data content or quality, visit [the NOAA GFS site](https",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3084,8 +3085,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Global Forecast System (GFS) - GFS data",
@@ -3093,6 +3093,7 @@
         "ARN":"arn:aws:s3:::noaa-gfs-bdp-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.emc.ncep.noaa.gov\/emc\/pages\/numerical_forecast_systems\/gfs.php",
         "Contact":"For questions regarding data content or quality, visit [the NOAA GFS site](https",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3107,8 +3108,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Global Historical Climatology Network Daily (GHCN-D)",
@@ -3116,6 +3116,7 @@
         "ARN":"arn:aws:s3:::noaa-ghcn-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/noaa\/noaa-ghcn",
         "Contact":"For questions regarding data content or quality, visit [the NOAA GHCN site](http",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3128,8 +3129,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Global Hydro Estimator (GHE) - Project data files",
@@ -3137,6 +3137,7 @@
         "ARN":"arn:aws:s3:::noaa-ghe-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ospo.noaa.gov\/Products\/atmosphere\/ghe\/index.html",
         "Contact":"For questions regarding product content orquality, visit https:\/\/www.ospo.noaa.g",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3149,8 +3150,7 @@
             "sustainability",
             "water",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Global Mosaic of Geostationary Satellite Imagery (GMGSI) - NOAA Global Mosaic of Geostationary Satellite Imagery (GMGSI)",
@@ -3158,6 +3158,7 @@
         "ARN":"arn:aws:s3:::noaa-gmgsi-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"[https:\/\/www.ospo.noaa.gov\/Operations\/GOES\/index.html](https:\/\/www.ospo.noaa.gov",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3170,8 +3171,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Global Real-Time Ocean Forecast System (Global RTOFS) - NOAA Global Real Time Ocean Forecasting System Data",
@@ -3179,6 +3179,7 @@
         "ARN":"arn:aws:s3:::noaa-nws-rtofs-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/noaa-nws-rtofs-pds.s3.amazonaws.com\/README.html",
         "Contact":"For questions regarding data content or quality, visit the RTOFS site (https:\/\/p",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3196,8 +3197,7 @@
             "oceans",
             "sustainability",
             "climate"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA High-Resolution Rapid Refresh (HRRR) Model - Archive of HRRR data since 2014.",
@@ -3205,6 +3205,7 @@
         "ARN":"arn:aws:s3:::noaa-hrrr-bdp-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/noaa\/noaa-hrrr",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3218,8 +3219,7 @@
             "environmental",
             "sustainability",
             "disaster response"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA High-Resolution Rapid Refresh (HRRR) Model - HRRR Zarr format near-real time data archive managed by the University of Utah",
@@ -3227,6 +3227,7 @@
         "ARN":"arn:aws:s3:::hrrrzarr",
         "Region":"us-west-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/noaa\/noaa-hrrr",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3240,8 +3241,7 @@
             "environmental",
             "sustainability",
             "disaster response"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Integrated Surface Database (ISD) - ISD in CSV format",
@@ -3249,6 +3249,7 @@
         "ARN":"arn:aws:s3:::noaa-global-hourly-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncei.noaa.gov\/data\/global-hourly\/doc\/isd-format-document.pdf",
         "Contact":"For questions regarding data content or quality, visit [the NOAA ISD site](https",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3261,8 +3262,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Integrated Surface Database (ISD) - ISD in original format",
@@ -3270,6 +3270,7 @@
         "ARN":"arn:aws:s3:::noaa-isd-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncei.noaa.gov\/data\/global-hourly\/doc\/isd-format-document.pdf",
         "Contact":"For questions regarding data content or quality, visit [the NOAA ISD site](https",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3282,8 +3283,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Joint Polar Satellite System (JPSS) - NOAA JPSS Data",
@@ -3291,6 +3291,7 @@
         "ARN":"arn:aws:s3:::noaa-jpss",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/NOAA-Big-Data-Program\/bdp-data-docs\/tree\/main\/JPSS",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3303,8 +3304,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA National Bathymetric Source Data - NOAA National Bathymetric Source Data",
@@ -3312,6 +3312,7 @@
         "ARN":"arn:aws:s3:::noaa-ocs-nationalbathymetry-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nauticalcharts.noaa.gov\/data\/bluetopo.html",
         "Contact":"For general questions or feedback about the data, please submit inquiries throug",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3325,8 +3326,7 @@
             "bathymetry",
             "marine navigation",
             "oceans"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA National Blend of Models (NBM) - National Blend of Models (NBM) COG Format",
@@ -3334,6 +3334,7 @@
         "ARN":"arn:aws:s3:::noaa-nbm-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/vlab.noaa.gov\/web\/mdl\/nbm",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3347,8 +3348,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA National Blend of Models (NBM) - National Blend of Models (NBM) Grib2 Format",
@@ -3356,6 +3356,7 @@
         "ARN":"arn:aws:s3:::noaa-nbm-grib2-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/vlab.noaa.gov\/web\/mdl\/nbm",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3369,8 +3370,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA National Digital Forecast Database (NDFD) - National Digital Forecast Database (NDFD) Grib2 Format",
@@ -3378,6 +3378,7 @@
         "ARN":"arn:aws:s3:::noaa-ndfd-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/vlab.noaa.gov\/web\/mdl\/ndfd (For NDFD Product information, instructions, ",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3390,8 +3391,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA National Water Model CONUS Retrospective Dataset - The complete archive of NWM data version 1.2.",
@@ -3399,6 +3399,7 @@
         "ARN":"arn:aws:s3:::nwm-archive",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/NOAA-Big-Data-Program\/bdp-data-docs\/blob\/main\/nwm\/README.md",
         "Contact":"For questions regarding data content or quality, go [here](http:\/\/water.noaa.gov",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3414,8 +3415,7 @@
             "agriculture",
             "transportation",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA National Water Model CONUS Retrospective Dataset - The complete archive of NWM data version 2.0.",
@@ -3423,6 +3423,7 @@
         "ARN":"arn:aws:s3:::noaa-nwm-retro-v2-0-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/NOAA-Big-Data-Program\/bdp-data-docs\/blob\/main\/nwm\/README.md",
         "Contact":"For questions regarding data content or quality, go [here](http:\/\/water.noaa.gov",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3438,8 +3439,7 @@
             "agriculture",
             "transportation",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA National Water Model CONUS Retrospective Dataset - The complete archive of NWM input forcing and model output data version 2.1 in N",
@@ -3447,6 +3447,7 @@
         "ARN":"arn:aws:s3:::noaa-nwm-retrospective-2-1-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/NOAA-Big-Data-Program\/bdp-data-docs\/blob\/main\/nwm\/README.md",
         "Contact":"For questions regarding data content or quality, go [here](http:\/\/water.noaa.gov",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3462,8 +3463,7 @@
             "agriculture",
             "transportation",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA National Water Model CONUS Retrospective Dataset - The complete archive of NWM model output data version 2.1 in Zarr format. The NW",
@@ -3471,6 +3471,7 @@
         "ARN":"arn:aws:s3:::noaa-nwm-retrospective-2-1-zarr-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/NOAA-Big-Data-Program\/bdp-data-docs\/blob\/main\/nwm\/README.md",
         "Contact":"For questions regarding data content or quality, go [here](http:\/\/water.noaa.gov",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3486,8 +3487,7 @@
             "agriculture",
             "transportation",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA National Water Model CONUS Retrospective Dataset - The streamflow from the NWM version 2.0 in Zarr format.",
@@ -3495,6 +3495,7 @@
         "ARN":"arn:aws:s3:::noaa-nwm-retro-v2-zarr-pds",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/NOAA-Big-Data-Program\/bdp-data-docs\/blob\/main\/nwm\/README.md",
         "Contact":"For questions regarding data content or quality, go [here](http:\/\/water.noaa.gov",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3510,8 +3511,7 @@
             "agriculture",
             "transportation",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA National Water Model Short-Range Forecast - A rolling four week archive of NWM data.",
@@ -3519,6 +3519,7 @@
         "ARN":"arn:aws:s3:::noaa-nwm-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/awslabs\/open-data-docs\/tree\/main\/docs\/noaa\/noaa-nwm-pds",
         "Contact":"For questions regarding data content or quality, go [here](http:\/\/water.noaa.gov",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3534,8 +3535,7 @@
             "agriculture",
             "transportation",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA North American Mesoscale Forecast System (NAM) - North American Mesoscale Forecast System (NAM) Data",
@@ -3543,6 +3543,7 @@
         "ARN":"arn:aws:s3:::noaa-nam-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.emc.ncep.noaa.gov\/emc\/pages\/numerical_forecast_systems\/nam.php, http",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3555,8 +3556,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Oceanic Climate Data Records - Sea Ice Concentration",
@@ -3564,6 +3564,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-sea-ice-concentration-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3577,8 +3578,7 @@
             "oceans",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Oceanic Climate Data Records - Sea Surface Temperature - Optimum Interpolation",
@@ -3586,6 +3586,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-sea-surface-temp-optimum-interpolation-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3599,8 +3600,7 @@
             "oceans",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Oceanic Climate Data Records - Sea Surface Temperature - WHOI",
@@ -3608,6 +3608,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-sea-surface-temp-whoi-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3621,8 +3622,7 @@
             "oceans",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Operational Forecast System (OFS) - CO-OPS Operational OFS Data (Historical Retention)",
@@ -3630,6 +3630,7 @@
         "ARN":"arn:aws:s3:::noaa-nos-ofs-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/NOAA-Big-Data-Program\/bdp-data-docs\/blob\/main\/OFS\/README.md",
         "Contact":"For questions regarding data content or quality, visit [the NOAA OFS site](https",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3646,8 +3647,7 @@
             "oceans",
             "water",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Operational Forecast System (OFS) - NOMADS Production OFS Data (30 day rolling retention)",
@@ -3655,6 +3655,7 @@
         "ARN":"arn:aws:s3:::noaa-ofs-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/NOAA-Big-Data-Program\/bdp-data-docs\/blob\/main\/OFS\/README.md",
         "Contact":"For questions regarding data content or quality, visit [the NOAA OFS site](https",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3671,8 +3672,7 @@
             "oceans",
             "water",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Rapid Refresh (RAP) - Rapid Refresh (RAP) Data",
@@ -3680,6 +3680,7 @@
         "ARN":"arn:aws:s3:::noaa-rap-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nco.ncep.noaa.gov\/pmb\/products\/rap\/",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3692,8 +3693,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Rapid Refresh Forecast System (RRFS) [Prototype] - Rapid Refresh Forecast System (RRFS) Data",
@@ -3701,6 +3701,7 @@
         "ARN":"arn:aws:s3:::noaa-rrfs-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/vlab.noaa.gov\/web\/ufs-r2o",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3713,8 +3714,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Real-Time Mesoscale Analysis (RTMA) - Real-Time Mesoscale Analysis (RTMA) Data",
@@ -3722,6 +3722,7 @@
         "ARN":"arn:aws:s3:::noaa-rtma-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nco.ncep.noaa.gov\/pmb\/products\/rtma\/",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3734,8 +3735,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Severe Weather Data Inventory (SWDI) - NOAA Severe Weather Data Inventory Dataset (SWDI)",
@@ -3743,6 +3743,7 @@
         "ARN":"arn:aws:s3:::noaa-swdi-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncei.noaa.gov\/access\/metadata\/landing-page\/bin\/iso?id=gov.noaa.ncdc:",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3755,8 +3756,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Space Weather Forecast and Observation Data - NOAA Space Weather Prediction Center Forecasts",
@@ -3764,6 +3764,7 @@
         "ARN":"arn:aws:s3:::noaa-swpc-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.swpc.noaa.gov\/products-and-data",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3776,8 +3777,7 @@
             "solar",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Terrestrial Climate Data Records - Leaf Area Index",
@@ -3785,6 +3785,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-leaf-area-index-fapar-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3797,8 +3798,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Terrestrial Climate Data Records - NDVI",
@@ -3806,6 +3806,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-ndvi-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3818,8 +3819,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Terrestrial Climate Data Records - Snow Cover Extent",
@@ -3827,6 +3827,7 @@
         "ARN":"arn:aws:s3:::noaa-cdr-snow-cover-ext-north-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncdc.noaa.gov\/cdr",
         "Contact":"For questions regarding the specific CDR data holdings, please contact NCEI.SAT.",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3839,8 +3840,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA U.S. Climate Gridded Dataset (NClimGrid) - Daily NClimGrid Data",
@@ -3848,6 +3848,7 @@
         "ARN":"arn:aws:s3:::noaa-nclimgrid-daily-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncei.noaa.gov\/access\/metadata\/landing-page\/bin\/iso?id=gov.noaa.ncdc:",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3860,8 +3861,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA U.S. Climate Gridded Dataset (NClimGrid) - Monthly NClimGrid Data",
@@ -3869,6 +3869,7 @@
         "ARN":"arn:aws:s3:::noaa-nclimgrid-monthly-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.ncei.noaa.gov\/access\/metadata\/landing-page\/bin\/iso?id=gov.noaa.ncdc:",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3881,8 +3882,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA U.S. Climate Normals",
@@ -3890,6 +3890,7 @@
         "ARN":"arn:aws:s3:::noaa-normals-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"[https:\/\/www.ncei.noaa.gov\/products\/us-climate-normals](https:\/\/www.ncei.noaa.go",
         "Contact":"For any questions regarding data delivery or any general questions regarding the",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3902,8 +3903,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Unified Forecast System (UFS) Marine Reanalysis: 1979-2019",
@@ -3911,6 +3911,7 @@
         "ARN":"arn:aws:s3:::noaa-ufs-rnrmarine-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/vlab.noaa.gov\/web\/ufs-r2o\/ NWS Disclaimer https:\/\/www.weather.gov\/discla",
         "Contact":"For questions regarding data content or quality, visit https:\/\/vlab.noaa.gov\/web",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3923,8 +3924,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Unified Forecast System Short-Range Weather (UFS SRW) Application - Unified Forecast System Short-Range Weather (UFS SRW) Application data",
@@ -3932,6 +3932,7 @@
         "ARN":"arn:aws:s3:::noaa-ufs-srw-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/ufs-srweather-app.readthedocs.io\/en\/develop\/",
         "Contact":"For questions regarding data content or quality, visit  https:\/\/github.com\/ufs-c",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3944,8 +3945,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Unified Forecast System Subseasonal to Seasonal Prototypes",
@@ -3953,6 +3953,7 @@
         "ARN":"arn:aws:s3:::noaa-ufs-prototypes-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/vlab.noaa.gov\/web\/ufs-r2o\/dataproducts NWS Disclaimer https:\/\/www.weathe",
         "Contact":"For questions regarding data content or quality, visit https:\/\/vlab.noaa.gov\/web",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3968,8 +3969,7 @@
             "sustainability",
             "weather",
             "oceans"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Unified Forecast System Weather Model (UFS-WM) Regression Tests - Unified Forecast System Weather Model (UFS-WM) Regression Tests data",
@@ -3977,6 +3977,7 @@
         "ARN":"arn:aws:s3:::noaa-ufs-regtests-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/ufs-weather-model.readthedocs.io\/en\/ufs-v1.0.0\/index.html",
         "Contact":"For questions regarding data content or quality, visit  https:\/\/github.com\/ufs-c",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -3989,8 +3990,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Water-Column Sonar Data Archive",
@@ -3998,6 +3998,7 @@
         "ARN":"arn:aws:s3:::noaa-wcsd-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/cires.gitbook.io\/ncei-wcsd-archive\/",
         "Contact":"wcd.info@noaa.gov",
         "ManagedBy":"[NOAA](https:\/\/www.ngdc.noaa.gov\/mgg\/wcd\/)",
@@ -4013,8 +4014,7 @@
             "mapping",
             "oceans",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA Wave Ensemble Reforecast - NOAA Wave Ensemble Reforecast Data",
@@ -4022,6 +4022,7 @@
         "ARN":"arn:aws:s3:::noaa-nws-gefswaves-reforecast-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/ricampos\/gefswaves_reforecast\/wiki  https:\/\/github.com\/ricamp",
         "Contact":"For questions related to wave modeling and the ensemble reforecast available, pl",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -4034,8 +4035,7 @@
             "meteorological",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NOAA\/PMEL Ocean Climate Stations Moorings - OCS moored buoy data",
@@ -4043,6 +4043,7 @@
         "ARN":"arn:aws:s3:::noaa-oar-keo-papa-pds",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.pmel.noaa.gov\/ocs\/ http:\/\/www.oceansites.org https:\/\/dods.ndbc.noaa.",
         "Contact":"For questions regarding data content or quality, users are directed to the OCS w",
         "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
@@ -4055,8 +4056,7 @@
             "oceans",
             "sustainability",
             "weather"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - Meteorological Statistical Model 1 (MTS1) data (1961-1990) in [HDF5](https:\/\/por",
@@ -4064,6 +4064,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/mts1",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4077,8 +4078,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - Meteorological Statistical Model 2 (MTS2) data (1991-2005) in [HDF5](https:\/\/por",
@@ -4086,6 +4086,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/mts2",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4099,8 +4100,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [HSDS](https:\/\/github.com\/NREL\/hsds-examples) NSRDB domains",
@@ -4108,6 +4108,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-hsds\/nrel\/nsrdb\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4121,8 +4122,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [NREL Solar Radiation Datasets](https:\/\/nsrdb.nrel.gov\/)",
@@ -4130,6 +4130,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4143,8 +4144,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [NSRDB](https:\/\/nsrdb.nrel.gov\/) 2km-10min data for the all of the Western Hemis",
@@ -4152,6 +4152,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/full_disc\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4165,8 +4166,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [NSRDB](https:\/\/nsrdb.nrel.gov\/) 2km-5min data for the Contiguous United States ",
@@ -4174,6 +4174,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/conus\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4187,8 +4188,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [NSRDB](https:\/\/nsrdb.nrel.gov\/) 4km-10min data from the Himawari satellites sta",
@@ -4196,6 +4196,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/himawari\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4209,8 +4210,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [NSRDB](https:\/\/nsrdb.nrel.gov\/) 4km-15min data from the Meteosat satellites sta",
@@ -4218,6 +4218,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/meteosat\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4231,8 +4232,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [NSRDB](https:\/\/nsrdb.nrel.gov\/) Suny-India data (2000-2014) in [HDF5](https:\/\/p",
@@ -4240,6 +4240,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/india\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4253,8 +4254,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [NSRDB](https:\/\/nsrdb.nrel.gov\/) synthetically downscaled 2km x 5min for Puerto ",
@@ -4262,6 +4262,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/v3\/puerto_rico\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4275,8 +4276,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [NSRDB](https:\/\/nsrdb.nrel.gov\/) v3 4km x 30min data (1998-2018) in [HDF5](https",
@@ -4284,6 +4284,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/v3\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4297,8 +4298,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [NSRDB](https:\/\/nsrdb.nrel.gov\/) v3 typical direct years (TDY) in [HDF5](https:\/",
@@ -4306,6 +4306,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/v3\/tdy\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4319,8 +4320,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [NSRDB](https:\/\/nsrdb.nrel.gov\/) v3 typical global years (TGY) in [HDF5](https:\/",
@@ -4328,6 +4328,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/v3\/tgy\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4341,8 +4342,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL National Solar Radiation Database - [NSRDB](https:\/\/nsrdb.nrel.gov\/) v3 typical meteorological years (TMY) in [HDF5]",
@@ -4350,6 +4350,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-nsrdb\/v3\/tmy\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/nsrdb.nrel.gov\/",
         "Contact":"nsrdb@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4363,8 +4364,7 @@
             "meteorological",
             "solar",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Bangladesh wind resource data (2014-2017) in [HDF5](https:\/\/portal.hdfgroup.org\/",
@@ -4372,6 +4372,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/bangladesh\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4383,8 +4384,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Central Asia wind resource data (2015) in [HDF5](https:\/\/portal.hdfgroup.org\/dis",
@@ -4392,6 +4392,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/central_asia\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4403,8 +4404,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Data for the [Eastern Wind Integration Study](https:\/\/www.nrel.gov\/grid\/eastern-",
@@ -4412,6 +4412,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/eastern_wind\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4423,8 +4424,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Data for the [Western Wind Integration Study](https:\/\/www.nrel.gov\/grid\/eastern-",
@@ -4432,6 +4432,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/western_wind\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4443,8 +4444,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Gulf of Mexico wind resource data (2000-2020) in [HDF5](https:\/\/portal.hdfgroup.",
@@ -4452,6 +4452,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/gulf_of_mexico\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4463,8 +4464,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Hawaii Wind Resource data for (2000-2019) in [HDF5](https:\/\/portal.hdfgroup.org\/",
@@ -4472,6 +4472,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/Hawaii\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4483,8 +4484,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - India wind resource data (2014) in [HDF5](https:\/\/portal.hdfgroup.org\/display\/HD",
@@ -4492,6 +4492,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/india\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4503,8 +4504,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Kazakhstan wind resource data (2015) in [HDF5](https:\/\/portal.hdfgroup.org\/displ",
@@ -4512,6 +4512,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/kazakhstan\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4523,8 +4524,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Maine wind resource data (2000-2020) in [HDF5](https:\/\/portal.hdfgroup.org\/displ",
@@ -4532,6 +4532,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/maine\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4543,8 +4544,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Mid Atlantic Wind Resource data for (2000-2020) in [HDF5](https:\/\/portal.hdfgrou",
@@ -4552,6 +4552,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/Mid_Atlantic\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4563,8 +4564,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - NREL Wind Resource Datasets",
@@ -4572,6 +4572,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4583,8 +4584,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - NW Pacific Wind Resource data for (2000-2019) in [HDF5](https:\/\/portal.hdfgroup.",
@@ -4592,6 +4592,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/NW_Pacific\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4603,8 +4604,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Offshore California Wind Resource data for (2000-2019) in [HDF5](https:\/\/portal.",
@@ -4612,6 +4612,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/Offshore_CA\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4623,8 +4624,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Philippines typical meteorological year data in [HDF5](https:\/\/portal.hdfgroup.o",
@@ -4632,6 +4632,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/philippines_tmy\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4643,8 +4644,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Philippines wind resource data (2017) in [HDF5](https:\/\/portal.hdfgroup.org\/disp",
@@ -4652,6 +4652,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/philippines\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4663,8 +4664,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Source files for [WIND Toolkit](https:\/\/www.nrel.gov\/grid\/wind-toolkit.html) CON",
@@ -4672,6 +4672,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/conus\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4683,8 +4684,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Source files for [WIND Toolkit](https:\/\/www.nrel.gov\/grid\/wind-toolkit.html) Can",
@@ -4692,6 +4692,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/canada\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4703,8 +4704,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Source files for [WIND Toolkit](https:\/\/www.nrel.gov\/grid\/wind-toolkit.html) Mex",
@@ -4712,6 +4712,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/mexico\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4723,8 +4724,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Source files for [wtk-us](https:\/\/www.nrel.gov\/grid\/wind-toolkit.html) gridded (",
@@ -4732,6 +4732,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/wtk-us\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4743,8 +4744,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Techno-economic subset of the [WIND Toolkit](https:\/\/www.nrel.gov\/grid\/wind-tool",
@@ -4752,6 +4752,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/wtk-techno-economic\/pywtk-data\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4763,8 +4764,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - Vietnam wind resource data (2016-2018) in [HDF5](https:\/\/portal.hdfgroup.org\/dis",
@@ -4772,6 +4772,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-wtk\/vietnam\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4783,8 +4784,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - [HSDS](https:\/\/github.com\/NREL\/hsds-examples) WIND domains",
@@ -4792,6 +4792,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-hsds\/nrel\/wtk\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4803,8 +4804,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"NREL Wind Integration National Dataset - [HSDS](https:\/\/github.com\/NREL\/hsds-examples) gridded WIND Toolkit domain",
@@ -4812,6 +4812,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-hsds\/nrel\/wtk-us.h5",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.nrel.gov\/grid\/wind-toolkit.html",
         "Contact":"wind-toolkit@nrel.gov",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4823,8 +4824,7 @@
             "geospatial",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"OpenAQ - Minutely CSVs of global air quality fetched from sources all over the world",
@@ -4832,6 +4832,7 @@
         "ARN":"arn:aws:s3:::openaq-fetches",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/openaq.org",
         "Contact":"info@openaq.org",
         "ManagedBy":"[OpenAQ](https:\/\/openaq.org)",
@@ -4843,8 +4844,7 @@
             "environmental",
             "geospatial",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"OpenEEW",
@@ -4852,6 +4852,7 @@
         "ARN":"arn:aws:s3:::grillo-openeew",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openeew\/openeew",
         "Contact":"hello@openeew.com",
         "ManagedBy":"[Grillo](https:\/\/grillo.io\/)",
@@ -4863,8 +4864,7 @@
             "earthquakes",
             "aws-pds",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"PoroTomo - PoroTomo Datasets",
@@ -4872,6 +4872,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-porotomo\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/PoroTomo\/PoroTomo.md",
         "Contact":"Thomas Coleman (thomas.coleman@silixa.com)",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4883,8 +4884,7 @@
             "seismology",
             "image processing",
             "geospatial"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"PoroTomo - PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data Resampled in Time M",
@@ -4892,6 +4892,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-porotomo\/DAS\/SEG-Y\/DASH\/Resampled\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/PoroTomo\/PoroTomo.md",
         "Contact":"Thomas Coleman (thomas.coleman@silixa.com)",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4903,8 +4904,7 @@
             "seismology",
             "image processing",
             "geospatial"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"PoroTomo - PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data in SEG-Y format",
@@ -4912,6 +4912,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-porotomo\/DAS\/SEG-Y\/DASH\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/PoroTomo\/PoroTomo.md",
         "Contact":"Thomas Coleman (thomas.coleman@silixa.com)",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4923,8 +4924,7 @@
             "seismology",
             "image processing",
             "geospatial"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"PoroTomo - PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data in [HDF5](https:\/\/p",
@@ -4932,6 +4932,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-porotomo\/DAS\/H5\/DASH\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/PoroTomo\/PoroTomo.md",
         "Contact":"Thomas Coleman (thomas.coleman@silixa.com)",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4943,8 +4944,7 @@
             "seismology",
             "image processing",
             "geospatial"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"PoroTomo - PoroTomo Nodal Seismometer Continuous Data",
@@ -4952,6 +4952,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-porotomo\/Nodal\/nodal_sac\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/PoroTomo\/PoroTomo.md",
         "Contact":"Thomas Coleman (thomas.coleman@silixa.com)",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4963,8 +4964,7 @@
             "seismology",
             "image processing",
             "geospatial"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"PoroTomo - PoroTomo Nodal Seismometer Field Notes and Metadata",
@@ -4972,6 +4972,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-porotomo\/Nodal\/nodal_metadata\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/PoroTomo\/PoroTomo.md",
         "Contact":"Thomas Coleman (thomas.coleman@silixa.com)",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -4983,8 +4984,7 @@
             "seismology",
             "image processing",
             "geospatial"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"PoroTomo - PoroTomo Nodal Seismometer Sweep Data",
@@ -4992,6 +4992,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-porotomo\/Nodal\/nodal_sac_sweep\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/PoroTomo\/PoroTomo.md",
         "Contact":"Thomas Coleman (thomas.coleman@silixa.com)",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -5003,8 +5004,7 @@
             "seismology",
             "image processing",
             "geospatial"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"PoroTomo - PoroTomo Vertical Distributed Acoustic Sensing (DASV) Data in SEG-Y format",
@@ -5012,6 +5012,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-porotomo\/DAS\/SEG-Y\/DASV\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/PoroTomo\/PoroTomo.md",
         "Contact":"Thomas Coleman (thomas.coleman@silixa.com)",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -5023,8 +5024,7 @@
             "seismology",
             "image processing",
             "geospatial"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"PoroTomo - PoroTomo Vertical Distributed Acoustic Sensing (DASV) Data in [HDF5](https:\/\/por",
@@ -5032,6 +5032,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-porotomo\/DAS\/H5\/DASV\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/PoroTomo\/PoroTomo.md",
         "Contact":"Thomas Coleman (thomas.coleman@silixa.com)",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -5043,8 +5044,7 @@
             "seismology",
             "image processing",
             "geospatial"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"PoroTomo - [HSDS](https:\/\/github.com\/NREL\/hsds-examples) PoroTomo domains",
@@ -5052,6 +5052,7 @@
         "ARN":"arn:aws:s3:::nrel-pds-hsds\/nrel\/porotomo\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/openEDI\/documentation\/blob\/master\/PoroTomo\/PoroTomo.md",
         "Contact":"Thomas Coleman (thomas.coleman@silixa.com)",
         "ManagedBy":"[National Renewable Energy Laboratory](https:\/\/www.nrel.gov\/)",
@@ -5063,8 +5064,7 @@
             "seismology",
             "image processing",
             "geospatial"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"RAPID NRT Flood Maps",
@@ -5072,6 +5072,7 @@
         "ARN":"arn:aws:s3:::rapid-nrt-flood-maps",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/QingYang6\/RAPID-NRT-flood-maps-on-AWS\/blob\/master\/README.md",
         "Contact":"xinyi.shen@uconn.edu; qing.yang6@hotmail.com",
         "ManagedBy":"University of Connecticut; Guangxi University",
@@ -5084,8 +5085,7 @@
             "water",
             "environmental",
             "disaster response"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Reference Elevation Model of Antarctica (REMA) - REMA DEM Mosaics",
@@ -5093,6 +5093,7 @@
         "ARN":"arn:aws:s3:::pgc-opendata-dems\/rema\/mosaics\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.pgc.umn.edu\/data\/rema\/",
         "Contact":"pgc-support@umn.edu",
         "ManagedBy":"[Polar Geospatial Center](http:\/\/www.pgc.umn.edu\/)",
@@ -5108,8 +5109,7 @@
             "satellite imagery",
             "cog",
             "stac"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Reference Elevation Model of Antarctica (REMA) - REMA DEM Strips",
@@ -5117,6 +5117,7 @@
         "ARN":"arn:aws:s3:::pgc-opendata-dems\/rema\/strips\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.pgc.umn.edu\/data\/rema\/",
         "Contact":"pgc-support@umn.edu",
         "ManagedBy":"[Polar Geospatial Center](http:\/\/www.pgc.umn.edu\/)",
@@ -5132,8 +5133,7 @@
             "satellite imagery",
             "cog",
             "stac"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"SILAM Air Quality - Surface NetCDF files",
@@ -5141,6 +5141,7 @@
         "ARN":"arn:aws:s3:::fmi-opendata-silam-surface-netcdf",
         "Region":"eu-west-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"http:\/\/en.ilmatieteenlaitos.fi\/open-data-on-aws-s3",
         "Contact":"avoin-data@fmi.fi",
         "ManagedBy":"[Finnish Meteorological Institute](https:\/\/www.ilmatieteenlaitos.fi\/)",
@@ -5154,8 +5155,7 @@
             "air quality",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"SILAM Air Quality - Surface Zarr files",
@@ -5163,6 +5163,7 @@
         "ARN":"arn:aws:s3:::fmi-opendata-silam-surface-zarr",
         "Region":"eu-west-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"http:\/\/en.ilmatieteenlaitos.fi\/open-data-on-aws-s3",
         "Contact":"avoin-data@fmi.fi",
         "ManagedBy":"[Finnish Meteorological Institute](https:\/\/www.ilmatieteenlaitos.fi\/)",
@@ -5176,8 +5177,7 @@
             "air quality",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"SMN Hi-Res Weather Forecast over Argentina",
@@ -5185,6 +5185,7 @@
         "ARN":"arn:aws:s3:::smn-ar-wrf",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"General information, tutorials and examples:[https:\/\/odp-aws-smn.github.io\/docum",
         "Contact":"For any questions regarding the data set or any general questions, you can conta",
         "ManagedBy":"[SMN](http:\/\/www.smn.gov.ar\/)",
@@ -5197,8 +5198,7 @@
             "weather",
             "meteorological",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Safecast - Bulk exports of air and radiation measurements",
@@ -5206,6 +5206,7 @@
         "ARN":"arn:aws:s3:::safecast-opendata-public-us-east-1",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/Safecast\/safecastapi\/wiki\/Data-Sets",
         "Contact":"https:\/\/groups.google.com\/forum\/#!forum\/safecast-devices",
         "ManagedBy":"[Safecast](https:\/\/safecast.org\/)",
@@ -5219,8 +5220,7 @@
             "geospatial",
             "radiation",
             "sustainability"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Sentinel-2 - Level 1C scenes and metadata, in [Requester Pays](https:\/\/docs.aws.amazon.com\/Am",
@@ -5228,6 +5228,7 @@
         "ARN":"arn:aws:s3:::sentinel-s2-l1c",
         "Region":"eu-central-1",
         "Type":"S3 Bucket",
+        "RequesterPays":true,
         "Documentation":"Documentation is available for [Sentinel-2 L1C](https:\/\/roda.sentinel-hub.com\/se",
         "Contact":"https:\/\/forum.sentinel-hub.com\/c\/aws-sentinel",
         "ManagedBy":"[Sinergise](https:\/\/www.sinergise.com\/)",
@@ -5243,8 +5244,7 @@
             "sustainability",
             "disaster response",
             "stac"
-        ],
-        "RequesterPays":true
+        ]
     },
     {
         "Name":"Sentinel-2 Cloud-Optimized GeoTIFFs - Level 2A scenes and metadata",
@@ -5252,6 +5252,7 @@
         "ARN":"arn:aws:s3:::sentinel-cogs",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":false,
         "Documentation":"https:\/\/github.com\/cirrus-geo\/cirrus-earth-search",
         "Contact":"opendata@element84.com",
         "ManagedBy":"[Element 84](https:\/\/www.element84.com\/)",
@@ -5268,8 +5269,7 @@
             "disaster response",
             "cog",
             "stac"
-        ],
-        "RequesterPays":false
+        ]
     },
     {
         "Name":"Sentinel-3 - Sentinel-3 Cloud Optimized GeoTIFF (COG) format",
@@ -5277,6 +5277,7 @@
         "ARN":"arn:aws:s3:::meeo-s3-cog\/",
         "Region":"eu-central-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/Sentinel-5P\/data-on-s3\/blob\/master\/DocsForAws\/Sentinel3Descri",
         "Contact":"sentinel3@meeo.it",
         "ManagedBy":"[Meteorological Environmental Earth Observation](http:\/\/www.meeo.it\/)",
@@ -5293,8 +5294,7 @@
             "sustainability",
             "cog",
             "stac"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Sentinel-5P Level 2 - Sentinel-5p Cloud Opimised GeoTIFF (COGT). TIFF format.",
@@ -5302,6 +5302,7 @@
         "ARN":"arn:aws:s3:::meeo-s5p\/COGT\/",
         "Region":"eu-central-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/Sentinel-5P\/data-on-s3\/blob\/master\/DocsForAws\/Sentinel5P_Desc",
         "Contact":"sentinel5p@meeo.it",
         "ManagedBy":"[Meteorological Environmental Earth Observation](http:\/\/www.meeo.it\/)",
@@ -5318,8 +5319,7 @@
             "sustainability",
             "cog",
             "stac"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"SondeHub Radiosonde Telemetry",
@@ -5327,6 +5327,7 @@
         "ARN":"arn:aws:s3:::sondehub-history",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/projecthorus\/sondehub-infra\/wiki\/Amazon-Open-Data",
         "Contact":"Michaela Wheeler <vk3fur@sondehub.org>",
         "ManagedBy":"[SondeHub](https:\/\/sondehub.org\/)",
@@ -5338,8 +5339,7 @@
             "environmental",
             "weather",
             "GPS"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Swiss Public Transport Stops",
@@ -5347,6 +5347,7 @@
         "ARN":"arn:aws:s3:::data.geo.admin.ch\/ch.bav.haltestellen-oev\/data.zip",
         "Region":"eu-west-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.bav.admin.ch\/bav\/de\/home\/allgemeine-themen\/fachthemen\/geoinformation",
         "Contact":"fredi.daellenbach@bav.admin.ch",
         "ManagedBy":"Swiss Geoportal",
@@ -5359,8 +5360,7 @@
             "mapping",
             "traffic",
             "transportation"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"Terrain Tiles - Gridded elevation tiles",
@@ -5368,6 +5368,7 @@
         "ARN":"arn:aws:s3:::elevation-tiles-prod",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/tilezen\/joerd\/tree\/master\/docs",
         "Contact":"https:\/\/github.com\/tilezen\/joerd\/issues",
         "ManagedBy":"Mapzen, a Linux Foundation project",
@@ -5381,8 +5382,7 @@
             "geospatial",
             "sustainability",
             "disaster response"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"USGS 3DEP LiDAR Point Clouds - Public access Entwine Point Tiles of most resources from the ``arn:aws:s3:::usgs",
@@ -5390,6 +5390,7 @@
         "ARN":"arn:aws:s3:::usgs-lidar-public",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/github.com\/hobu\/usgs-lidar\/",
         "Contact":"https:\/\/github.com\/hobu\/usgs-lidar",
         "ManagedBy":"[Hobu, Inc.](https:\/\/hobu.co)",
@@ -5404,8 +5405,7 @@
             "lidar",
             "sustainability",
             "stac"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"USGS Landsat - Scenes and metadata",
@@ -5413,6 +5413,7 @@
         "ARN":"arn:aws:s3:::usgs-landsat\/collection02\/",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":true,
         "Documentation":"https:\/\/www.usgs.gov\/core-science-systems\/nli\/landsat\/landsat-commercial-cloud-d",
         "Contact":"https:\/\/answers.usgs.gov\/",
         "ManagedBy":"[United States Geological Survey](https:\/\/www.usgs.gov)",
@@ -5428,8 +5429,7 @@
             "disaster response",
             "stac",
             "cog"
-        ],
-        "RequesterPays":true
+        ]
     },
     {
         "Name":"World Bank - Light Every Night",
@@ -5437,6 +5437,7 @@
         "ARN":"arn:aws:s3:::globalnightlight",
         "Region":"us-east-1",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/worldbank.github.io\/OpenNightLights\/wb-light-every-night-readme.html",
         "Contact":"Trevor Monroe tmonroe@worldbank.org; Benjamin P. Stewart bstewart@worldbankgroup",
         "ManagedBy":"[World Bank Group](https:\/\/www.worldbank.org\/en\/home)",
@@ -5449,8 +5450,7 @@
             "aws-pds",
             "stac",
             "cog"
-        ],
-        "RequesterPays":null
+        ]
     },
     {
         "Name":"iSDAsoil",
@@ -5458,6 +5458,7 @@
         "ARN":"arn:aws:s3:::isdasoil",
         "Region":"us-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
         "Documentation":"https:\/\/www.isda-africa.com\/isdasoil\/isdasoil-on-aws\/",
         "Contact":"info@isda-africa.com",
         "ManagedBy":"[Innovative Solutions for Decision Agriculture (iSDA)](https:\/\/www.isda-africa.c",
@@ -5474,7 +5475,6 @@
             "geospatial",
             "machine learning",
             "satellite imagery"
-        ],
-        "RequesterPays":null
+        ]
     }
 ]
