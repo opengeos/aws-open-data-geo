@@ -9,13 +9,13 @@ out_dir = "open-data-registry-main"
 zip_file = "open-data-registry-main.zip"
 max_chars = 80  # The maximum number of characters in each column
 
-# if os.path.exists(out_dir):
-#     shutil.rmtree(out_dir)
+if os.path.exists(out_dir):
+    shutil.rmtree(out_dir)
 
-# if os.path.exists(zip_file):
-#     os.remove(zip_file)
+if os.path.exists(zip_file):
+    os.remove(zip_file)
 
-# leafmap.download_file(url, output=zip_file, unzip=True)
+leafmap.download_file(url, output=zip_file, unzip=True)
 
 
 in_dir = os.path.join(out_dir, "datasets")
