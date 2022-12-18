@@ -22,7 +22,7 @@ jobs:
           pip install -r requirements.txt
       - name: execute python script
         run: |
-          python aws_stac_catalogs.py
+          python aws_geo_datasets.py
       - name: file_check
         run: ls -l -a
       - name: commit files
