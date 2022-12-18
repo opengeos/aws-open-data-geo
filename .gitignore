@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+open-data-registry-main.zip
+open-data-registry-main/
+.vscode/
+
 # Distribution / packaging
 .Python
 build/
@@ -127,3 +131,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
