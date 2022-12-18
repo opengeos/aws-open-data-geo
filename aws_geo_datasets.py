@@ -9,13 +9,13 @@ out_dir = "open-data-registry-main"
 zip_file = "open-data-registry-main.zip"
 max_chars = 80  # The maximum number of characters in each column
 
-if os.path.exists(out_dir):
-    shutil.rmtree(out_dir)
+# if os.path.exists(out_dir):
+#     shutil.rmtree(out_dir)
 
-if os.path.exists(zip_file):
-    os.remove(zip_file)
+# if os.path.exists(zip_file):
+#     os.remove(zip_file)
 
-leafmap.download_file(url, output=zip_file, unzip=True)
+# leafmap.download_file(url, output=zip_file, unzip=True)
 
 
 in_dir = os.path.join(out_dir, "datasets")
@@ -44,6 +44,9 @@ for file in files:
     with open(file, "r") as f:
         dataset = yaml.safe_load(f)
 
+        if "Deprecated" in dataset:
+            continue
+
         tags = dataset.get("Tags", [])
         name = dataset.get("Name", "")
 
@@ -59,39 +62,50 @@ for file in files:
 
             for resource in resources:
 
-                if "Explore" in resource:
-                    explore = resource["Explore"][0]
-                    url = explore[explore.find("http") : -1]
+                before_href = resource["Description"].split("](")[0].replace("[", "")
+                if len(resource["Description"].split("](")) > 1:
+                    after_href = resource["Description"].split("](")[1].split(")")[1]
+                else:  # No hyperlink
+                    after_href = ""
 
-                    resource.pop("Explore")
-                    resource["Description"] = resource["Description"][:max_chars]
+                resource["Description"] = (
+                    f"{before_href}{after_href}"[:max_chars]
+                    .replace("\n", "")
+                    .replace(".", "")
+                    .replace("or [SQS", "")
+                    .replace("(ORC", "")
+                    .replace("[", "")
+                    .replace("(2007-2014", "(2007-2014)")
+                    .replace("(2007-2013", "(2007-2013)")
+                    .strip()
+                )
 
-                    item = {}
+                item = {}
 
-                    if names[name] > 1:
-                        item["Name"] = f"{name} - {resource['Description']}"
-                    else:
-                        item["Name"] = name
+                if names[name] > 1:
+                    item["Name"] = f"{name} - {resource['Description']}"
+                else:
+                    item["Name"] = name
 
-                    for key in resource:
-                        item[key] = resource[key]
+                for key in resource:
+                    item[key] = resource[key]
 
-                    item["Documentation"] = (
-                        dataset["Documentation"]
-                        .replace("<br/>", "")
-                        .replace("\n", "")[:max_chars]
-                    )
-                    item["Contact"] = (
-                        dataset["Contact"]
-                        .replace("<br/>", "")
-                        .replace("\n", "")[:max_chars]
-                    )
-                    item["ManagedBy"] = dataset["ManagedBy"][:max_chars]
-                    item["UpdateFrequency"] = dataset["UpdateFrequency"][:max_chars]
-                    item["License"] = dataset["License"].replace("\n", "")[:max_chars]
-                    item["Tags"] = dataset["Tags"]
+                item["Documentation"] = (
+                    dataset["Documentation"]
+                    .replace("<br/>", "")
+                    .replace("\n", "")[:max_chars]
+                )
+                item["Contact"] = (
+                    dataset["Contact"]
+                    .replace("<br/>", "")
+                    .replace("\n", "")[:max_chars]
+                )
+                item["ManagedBy"] = dataset["ManagedBy"][:max_chars]
+                item["UpdateFrequency"] = dataset["UpdateFrequency"][:max_chars]
+                item["License"] = dataset["License"].replace("\n", "")[:max_chars]
+                item["Tags"] = dataset["Tags"]
 
-                    datasets.append(item)
+                datasets.append(item)
 
 
 print(f"Total number of geospatial datasets: {len(datasets)}")
