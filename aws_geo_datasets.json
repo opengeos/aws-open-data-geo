@@ -3978,32 +3978,6 @@
     {
         "Name":"Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region)",
         "Description":"GBIF species occurrence data in Parquet format (af-south-1 region)",
-        "ARN":"arn:aws:s3:::gbif-open-data-af-south-1",
-        "Region":"af-south-1",
-        "Type":"S3 Bucket",
-        "RequesterPays":null,
-        "Explore":[
-            "[Browse bucket](https:\/\/gbif-open-data-af-south-1.s3.af-south-1.amazonaws.com\/index.html)"
-        ],
-        "Documentation":"Documentation can be found [here](https:\/\/github.com\/gbif\/occurrence\/blob\/master",
-        "Contact":"helpdesk@gbif.org",
-        "ManagedBy":"The Global Biodiversity Information Facility ([GBIF](https:\/\/www.gbif.org))",
-        "UpdateFrequency":"Snapshots of GBIF are taken on a monthly basis",
-        "License":"[CC-BY-NC](https:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/) under the GBIF [term",
-        "Tags":[
-            "aws-pds",
-            "earth observation",
-            "biodiversity",
-            "bioinformatics",
-            "conservation",
-            "life sciences"
-        ],
-        "Host":null,
-        "AccountRequired":null
-    },
-    {
-        "Name":"Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region)",
-        "Description":"GBIF species occurrence data in Parquet format (af-south-1 region)",
         "ARN":"arn:aws:sns:af-south-1:288719126026:gbif-open-data-af-south-1-object_created",
         "Region":"af-south-1",
         "Type":"SNS Topic",
@@ -4026,13 +4000,15 @@
         "AccountRequired":null
     },
     {
-        "Name":"Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
-        "Description":"GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
-        "ARN":"arn:aws:sns:af-south-1:288719126026:gbif-open-data-ap-southeast-2-object_created",
-        "Region":"ap-southeast-2",
-        "Type":"SNS Topic",
+        "Name":"Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region)",
+        "Description":"GBIF species occurrence data in Parquet format (af-south-1 region)",
+        "ARN":"arn:aws:s3:::gbif-open-data-af-south-1",
+        "Region":"af-south-1",
+        "Type":"S3 Bucket",
         "RequesterPays":null,
-        "Explore":null,
+        "Explore":[
+            "[Browse bucket](https:\/\/gbif-open-data-af-south-1.s3.af-south-1.amazonaws.com\/index.html)"
+        ],
         "Documentation":"Documentation can be found [here](https:\/\/github.com\/gbif\/occurrence\/blob\/master",
         "Contact":"helpdesk@gbif.org",
         "ManagedBy":"The Global Biodiversity Information Facility ([GBIF](https:\/\/www.gbif.org))",
@@ -4059,6 +4035,30 @@
         "Explore":[
             "[Browse bucket](https:\/\/gbif-open-data-ap-southeast-2.s3.ap-southeast-2.amazonaws.com\/index.html)"
         ],
+        "Documentation":"Documentation can be found [here](https:\/\/github.com\/gbif\/occurrence\/blob\/master",
+        "Contact":"helpdesk@gbif.org",
+        "ManagedBy":"The Global Biodiversity Information Facility ([GBIF](https:\/\/www.gbif.org))",
+        "UpdateFrequency":"Snapshots of GBIF are taken on a monthly basis",
+        "License":"[CC-BY-NC](https:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/) under the GBIF [term",
+        "Tags":[
+            "aws-pds",
+            "earth observation",
+            "biodiversity",
+            "bioinformatics",
+            "conservation",
+            "life sciences"
+        ],
+        "Host":null,
+        "AccountRequired":null
+    },
+    {
+        "Name":"Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
+        "Description":"GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
+        "ARN":"arn:aws:sns:af-south-1:288719126026:gbif-open-data-ap-southeast-2-object_created",
+        "Region":"ap-southeast-2",
+        "Type":"SNS Topic",
+        "RequesterPays":null,
+        "Explore":null,
         "Documentation":"Documentation can be found [here](https:\/\/github.com\/gbif\/occurrence\/blob\/master",
         "Contact":"helpdesk@gbif.org",
         "ManagedBy":"The Global Biodiversity Information Facility ([GBIF](https:\/\/www.gbif.org))",
@@ -6669,6 +6669,58 @@
             "sustainability",
             "disaster response",
             "satellite imagery"
+        ],
+        "Host":null,
+        "AccountRequired":null
+    },
+    {
+        "Name":"NOAA Global Drifter Program - Hourly Sea Surface Temperature - Hourly Sea Surface Temperature Data",
+        "Description":"Hourly Sea Surface Temperature Data",
+        "ARN":"arn:aws:s3:::noaa-oar-hourly-gdp-pds",
+        "Region":"us-east-1",
+        "Type":"S3 Bucket",
+        "RequesterPays":null,
+        "Explore":[
+            "[Browse Bucket](https:\/\/noaa-oar-hourly-gdp-pds.s3.amazonaws.com\/index.html)"
+        ],
+        "Documentation":"https:\/\/www.aoml.noaa.gov\/phod\/gdp\/hourly_data.php",
+        "Contact":"Please direct scientific inquiries to Dr. Rick Lumpkin (Rick.Lumpkin@noaa.gov) a",
+        "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
+        "UpdateFrequency":"New data is added as soon as it's available.",
+        "License":"Open Data. There are no restrictions on the use of this data.",
+        "Tags":[
+            "aws-pds",
+            "agriculture",
+            "climate",
+            "meteorological",
+            "sustainability",
+            "weather",
+            "oceans"
+        ],
+        "Host":null,
+        "AccountRequired":null
+    },
+    {
+        "Name":"NOAA Global Drifter Program - Hourly Sea Surface Temperature - New data notifications for Hourly Sea Surface Temperature, only Lambda and SQS p",
+        "Description":"New data notifications for Hourly Sea Surface Temperature, only Lambda and SQS p",
+        "ARN":"arn:aws:sns:us-east-1:709902155096:NewHourlyGDPObject",
+        "Region":"us-east-1",
+        "Type":"SNS Topic",
+        "RequesterPays":null,
+        "Explore":null,
+        "Documentation":"https:\/\/www.aoml.noaa.gov\/phod\/gdp\/hourly_data.php",
+        "Contact":"Please direct scientific inquiries to Dr. Rick Lumpkin (Rick.Lumpkin@noaa.gov) a",
+        "ManagedBy":"[NOAA](http:\/\/www.noaa.gov\/)",
+        "UpdateFrequency":"New data is added as soon as it's available.",
+        "License":"Open Data. There are no restrictions on the use of this data.",
+        "Tags":[
+            "aws-pds",
+            "agriculture",
+            "climate",
+            "meteorological",
+            "sustainability",
+            "weather",
+            "oceans"
         ],
         "Host":null,
         "AccountRequired":null
@@ -10945,31 +10997,6 @@
     {
         "Name":"Retired \u2013 UK Met Office Atmospheric Deterministic and Probabilistic Forecasts - Met Office Global Atmospheric Hi-Res Model - 10km Deterministic",
         "Description":"Met Office Global Atmospheric Hi-Res Model - 10km Deterministic",
-        "ARN":"arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-global-prd",
-        "Region":"eu-west-2",
-        "Type":"SNS Topic",
-        "RequesterPays":null,
-        "Explore":null,
-        "Documentation":"https:\/\/github.com\/MetOffice\/aws-earth-examples",
-        "Contact":"https:\/\/www.metoffice.gov.uk\/about-us\/contact",
-        "ManagedBy":"[UK Met Office](https:\/\/www.metoffice.gov.uk\/)",
-        "UpdateFrequency":"Daily (with 24 hour delay)",
-        "License":"This data is made available under a [Creative Commons licence](https:\/\/creativec",
-        "Tags":[
-            "aws-pds",
-            "agriculture",
-            "earth observation",
-            "climate",
-            "weather",
-            "meteorological",
-            "sustainability"
-        ],
-        "Host":null,
-        "AccountRequired":null
-    },
-    {
-        "Name":"Retired \u2013 UK Met Office Atmospheric Deterministic and Probabilistic Forecasts - Met Office Global Atmospheric Hi-Res Model - 10km Deterministic",
-        "Description":"Met Office Global Atmospheric Hi-Res Model - 10km Deterministic",
         "ARN":"arn:aws:s3:::aws-earth-mo-atmospheric-global-prd",
         "Region":"eu-west-2",
         "Type":"S3 Bucket",
@@ -10993,9 +11020,9 @@
         "AccountRequired":null
     },
     {
-        "Name":"Retired \u2013 UK Met Office Atmospheric Deterministic and Probabilistic Forecasts - Met Office Global and Regional Ensemble Prediction System (Global) - MOGREPS-G",
-        "Description":"Met Office Global and Regional Ensemble Prediction System (Global) - MOGREPS-G",
-        "ARN":"arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-mogreps-g-prd",
+        "Name":"Retired \u2013 UK Met Office Atmospheric Deterministic and Probabilistic Forecasts - Met Office Global Atmospheric Hi-Res Model - 10km Deterministic",
+        "Description":"Met Office Global Atmospheric Hi-Res Model - 10km Deterministic",
+        "ARN":"arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-global-prd",
         "Region":"eu-west-2",
         "Type":"SNS Topic",
         "RequesterPays":null,
@@ -11023,6 +11050,31 @@
         "ARN":"arn:aws:s3:::aws-earth-mo-atmospheric-mogreps-g-prd",
         "Region":"eu-west-2",
         "Type":"S3 Bucket",
+        "RequesterPays":null,
+        "Explore":null,
+        "Documentation":"https:\/\/github.com\/MetOffice\/aws-earth-examples",
+        "Contact":"https:\/\/www.metoffice.gov.uk\/about-us\/contact",
+        "ManagedBy":"[UK Met Office](https:\/\/www.metoffice.gov.uk\/)",
+        "UpdateFrequency":"Daily (with 24 hour delay)",
+        "License":"This data is made available under a [Creative Commons licence](https:\/\/creativec",
+        "Tags":[
+            "aws-pds",
+            "agriculture",
+            "earth observation",
+            "climate",
+            "weather",
+            "meteorological",
+            "sustainability"
+        ],
+        "Host":null,
+        "AccountRequired":null
+    },
+    {
+        "Name":"Retired \u2013 UK Met Office Atmospheric Deterministic and Probabilistic Forecasts - Met Office Global and Regional Ensemble Prediction System (Global) - MOGREPS-G",
+        "Description":"Met Office Global and Regional Ensemble Prediction System (Global) - MOGREPS-G",
+        "ARN":"arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-mogreps-g-prd",
+        "Region":"eu-west-2",
+        "Type":"SNS Topic",
         "RequesterPays":null,
         "Explore":null,
         "Documentation":"https:\/\/github.com\/MetOffice\/aws-earth-examples",
@@ -11095,9 +11147,9 @@
     {
         "Name":"Retired \u2013 UK Met Office Atmospheric Deterministic and Probabilistic Forecasts - Met Office UK Atmospheric Hi-Res Model (UKV) - 2km Deterministic",
         "Description":"Met Office UK Atmospheric Hi-Res Model (UKV) - 2km Deterministic",
-        "ARN":"arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-ukv-prd",
+        "ARN":"arn:aws:s3:::aws-earth-mo-atmospheric-ukv-prd",
         "Region":"eu-west-2",
-        "Type":"SNS Topic",
+        "Type":"S3 Bucket",
         "RequesterPays":null,
         "Explore":null,
         "Documentation":"https:\/\/github.com\/MetOffice\/aws-earth-examples",
@@ -11120,9 +11172,9 @@
     {
         "Name":"Retired \u2013 UK Met Office Atmospheric Deterministic and Probabilistic Forecasts - Met Office UK Atmospheric Hi-Res Model (UKV) - 2km Deterministic",
         "Description":"Met Office UK Atmospheric Hi-Res Model (UKV) - 2km Deterministic",
-        "ARN":"arn:aws:s3:::aws-earth-mo-atmospheric-ukv-prd",
+        "ARN":"arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-ukv-prd",
         "Region":"eu-west-2",
-        "Type":"S3 Bucket",
+        "Type":"SNS Topic",
         "RequesterPays":null,
         "Explore":null,
         "Documentation":"https:\/\/github.com\/MetOffice\/aws-earth-examples",
@@ -11702,8 +11754,8 @@
         "AccountRequired":null
     },
     {
-        "Name":"Sentinel-2 - Zipped archives for each product with 3 day retention period, in Requester Pays",
-        "Description":"Zipped archives for each product with 3 day retention period, in Requester Pays",
+        "Name":"Sentinel-2 - Zipped archives for each L1C product with 3 day retention period, in Requester P",
+        "Description":"Zipped archives for each L1C product with 3 day retention period, in Requester P",
         "ARN":"arn:aws:s3:::sentinel-s2-l1c-zips",
         "Region":"eu-central-1",
         "Type":"S3 Bucket",
@@ -11729,8 +11781,8 @@
         "AccountRequired":null
     },
     {
-        "Name":"Sentinel-2 - Zipped archives for each product with 3 day retention period, in Requester Pays",
-        "Description":"Zipped archives for each product with 3 day retention period, in Requester Pays",
+        "Name":"Sentinel-2 - Zipped archives for each L2A product with 3 day retention period, in Requester P",
+        "Description":"Zipped archives for each L2A product with 3 day retention period, in Requester P",
         "ARN":"arn:aws:s3:::sentinel-s2-l2a-zips",
         "Region":"eu-central-1",
         "Type":"S3 Bucket",
