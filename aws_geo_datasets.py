@@ -1,3 +1,4 @@
+import json
 import os
 import shutil
 import yaml
@@ -103,7 +104,7 @@ for file in files:
                 item["ManagedBy"] = dataset["ManagedBy"][:max_chars]
                 item["UpdateFrequency"] = dataset["UpdateFrequency"][:max_chars]
                 item["License"] = dataset["License"].replace("\n", "")[:max_chars]
-                item["Tags"] = dataset["Tags"]
+                item["Tags"] = ", ".join(dataset["Tags"])
 
                 datasets.append(item)
 
@@ -113,4 +114,8 @@ print(f"Total number of geospatial datasets: {len(datasets)}")
 df = pd.DataFrame(datasets)
 df = df.sort_values(by="Name")
 df.to_csv("aws_geo_datasets.tsv", index=False, sep="\t")
-df.to_json("aws_geo_datasets.json", orient="records", indent=4)
+
+data = json.loads(df.to_json(orient="records"))
+
+with open("aws_geo_datasets.json", "w") as f:
+    json.dump(data, f, indent=4)
