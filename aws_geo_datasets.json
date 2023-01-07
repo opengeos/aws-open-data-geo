@@ -3549,6 +3549,42 @@
         "AccountRequired": null
     },
     {
+        "Name": "NOAA - hourly position, current, and sea surface temperature from drifters - Hourly position, current, and sea surface temperature data from drifters",
+        "Description": "Hourly position, current, and sea surface temperature data from drifters",
+        "ARN": "arn:aws:s3:::noaa-oar-hourly-gdp-pds",
+        "Region": "us-east-1",
+        "Type": "S3 Bucket",
+        "RequesterPays": null,
+        "Explore": [
+            "[Browse Bucket](https://noaa-oar-hourly-gdp-pds.s3.amazonaws.com/index.html)"
+        ],
+        "Documentation": "https://www.aoml.noaa.gov/phod/gdp/hourly_data.php",
+        "Contact": "Please direct scientific inquiries to Dr. Rick Lumpkin (Rick.Lumpkin@noaa.gov) a",
+        "ManagedBy": "[NOAA](http://www.noaa.gov/)",
+        "UpdateFrequency": "New data is added as soon as it's available.",
+        "License": "Open Data. There are no restrictions on the use of this data.",
+        "Tags": "aws-pds, climate, meteorological, sustainability, weather, oceans, environmental",
+        "Host": null,
+        "AccountRequired": null
+    },
+    {
+        "Name": "NOAA - hourly position, current, and sea surface temperature from drifters - New data notifications for Hourly position, current, and sea surface temperature",
+        "Description": "New data notifications for Hourly position, current, and sea surface temperature",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewHourlyGDPObject",
+        "Region": "us-east-1",
+        "Type": "SNS Topic",
+        "RequesterPays": null,
+        "Explore": null,
+        "Documentation": "https://www.aoml.noaa.gov/phod/gdp/hourly_data.php",
+        "Contact": "Please direct scientific inquiries to Dr. Rick Lumpkin (Rick.Lumpkin@noaa.gov) a",
+        "ManagedBy": "[NOAA](http://www.noaa.gov/)",
+        "UpdateFrequency": "New data is added as soon as it's available.",
+        "License": "Open Data. There are no restrictions on the use of this data.",
+        "Tags": "aws-pds, climate, meteorological, sustainability, weather, oceans, environmental",
+        "Host": null,
+        "AccountRequired": null
+    },
+    {
         "Name": "NOAA 3-D Surge and Tide Operational Forecast System for the Atlantic Basin (STOFS-3D-Atlantic) - NOAA STOFS-3D-Atlantic Forecast Guidance",
         "Description": "NOAA STOFS-3D-Atlantic Forecast Guidance",
         "ARN": "arn:aws:s3:::noaa-nos-stofs3d-pds",
@@ -3559,7 +3595,7 @@
             "[Browse Bucket](https://noaa-nos-stofs3d-pds.s3.amazonaws.com/index.html)"
         ],
         "Documentation": "https://noaa-nos-stofs3d-pds.s3.amazonaws.com/README.html",
-        "Contact": "For questions regarding data content or quality, visit the ESTOFS site (https://",
+        "Contact": "For questions regarding data content or quality, visit the STOFS site (https://p",
         "ManagedBy": "[NOAA](http://www.noaa.gov/)",
         "UpdateFrequency": "One time per day at 12 UTC",
         "License": "Open Data. There are no restrictions on the use of this data.",
@@ -3576,7 +3612,7 @@
         "RequesterPays": null,
         "Explore": null,
         "Documentation": "https://noaa-nos-stofs3d-pds.s3.amazonaws.com/README.html",
-        "Contact": "For questions regarding data content or quality, visit the ESTOFS site (https://",
+        "Contact": "For questions regarding data content or quality, visit the STOFS site (https://p",
         "ManagedBy": "[NOAA](http://www.noaa.gov/)",
         "UpdateFrequency": "One time per day at 12 UTC",
         "License": "Open Data. There are no restrictions on the use of this data.",
@@ -4405,42 +4441,6 @@
         "UpdateFrequency": "New data is added as soon as it's available",
         "License": "There are no restrictions on the use of this data.",
         "Tags": "aws-pds, agriculture, geospatial, weather, earth observation, meteorological, sustainability, disaster response, satellite imagery",
-        "Host": null,
-        "AccountRequired": null
-    },
-    {
-        "Name": "NOAA Global Drifter Program - Hourly Sea Surface Temperature - Hourly Sea Surface Temperature Data",
-        "Description": "Hourly Sea Surface Temperature Data",
-        "ARN": "arn:aws:s3:::noaa-oar-hourly-gdp-pds",
-        "Region": "us-east-1",
-        "Type": "S3 Bucket",
-        "RequesterPays": null,
-        "Explore": [
-            "[Browse Bucket](https://noaa-oar-hourly-gdp-pds.s3.amazonaws.com/index.html)"
-        ],
-        "Documentation": "https://www.aoml.noaa.gov/phod/gdp/hourly_data.php",
-        "Contact": "Please direct scientific inquiries to Dr. Rick Lumpkin (Rick.Lumpkin@noaa.gov) a",
-        "ManagedBy": "[NOAA](http://www.noaa.gov/)",
-        "UpdateFrequency": "New data is added as soon as it's available.",
-        "License": "Open Data. There are no restrictions on the use of this data.",
-        "Tags": "aws-pds, agriculture, climate, meteorological, sustainability, weather, oceans",
-        "Host": null,
-        "AccountRequired": null
-    },
-    {
-        "Name": "NOAA Global Drifter Program - Hourly Sea Surface Temperature - New data notifications for Hourly Sea Surface Temperature, only Lambda and SQS p",
-        "Description": "New data notifications for Hourly Sea Surface Temperature, only Lambda and SQS p",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewHourlyGDPObject",
-        "Region": "us-east-1",
-        "Type": "SNS Topic",
-        "RequesterPays": null,
-        "Explore": null,
-        "Documentation": "https://www.aoml.noaa.gov/phod/gdp/hourly_data.php",
-        "Contact": "Please direct scientific inquiries to Dr. Rick Lumpkin (Rick.Lumpkin@noaa.gov) a",
-        "ManagedBy": "[NOAA](http://www.noaa.gov/)",
-        "UpdateFrequency": "New data is added as soon as it's available.",
-        "License": "Open Data. There are no restrictions on the use of this data.",
-        "Tags": "aws-pds, agriculture, climate, meteorological, sustainability, weather, oceans",
         "Host": null,
         "AccountRequired": null
     },
@@ -5581,7 +5581,7 @@
     {
         "Name": "NOAA U.S. Climate Gridded Dataset (NClimGrid) - New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowe",
         "Description": "New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowe",
-        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridMonthlyObject",
+        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridDailyObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "RequesterPays": null,
@@ -5598,7 +5598,7 @@
     {
         "Name": "NOAA U.S. Climate Gridded Dataset (NClimGrid) - New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowe",
         "Description": "New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowe",
-        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridDailyObject",
+        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridMonthlyObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "RequesterPays": null,
