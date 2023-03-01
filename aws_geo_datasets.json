@@ -473,44 +473,6 @@
         "AccountRequired": null
     },
     {
-        "Name": "CMAS Data Warehouse - AMET Data",
-        "Description": "AMET Data",
-        "ARN": "arn:aws:s3:::cmas-amet",
-        "Region": "us-east-1",
-        "Type": "S3 Bucket",
-        "Documentation": "https://dataverse.unc.edu/dataverse/cmascenter",
-        "Contact": "cmas@unc.edu",
-        "ManagedBy": "[CMAS CENTER](https://cmascenter.org/)",
-        "UpdateFrequency": "New data is added as soon as it is available.",
-        "License": "There are no restrictions on the use of this data. US EPA License (https://paste",
-        "Tags": "aws-pds, air quality, meteorological, geospatial, environmental, sustainability, climate",
-        "Explore": [
-            "[Browse Bucket](https://cmas-amet.s3.amazonaws.com/index.html)"
-        ],
-        "RequesterPays": null,
-        "Host": null,
-        "AccountRequired": null
-    },
-    {
-        "Name": "CMAS Data Warehouse - CMAQ 2016 Modeling Platform",
-        "Description": "CMAQ 2016 Modeling Platform",
-        "ARN": "arn:aws:s3:::cmas-cmaq-modeling-platform-2016",
-        "Region": "us-east-1",
-        "Type": "S3 Bucket",
-        "Documentation": "https://dataverse.unc.edu/dataverse/cmascenter",
-        "Contact": "cmas@unc.edu",
-        "ManagedBy": "[CMAS CENTER](https://cmascenter.org/)",
-        "UpdateFrequency": "New data is added as soon as it is available.",
-        "License": "There are no restrictions on the use of this data. US EPA License (https://paste",
-        "Tags": "aws-pds, air quality, meteorological, geospatial, environmental, sustainability, climate",
-        "Explore": [
-            "[Browse Bucket](https://cmas-cmaq-modeling-platform-2016.s3.amazonaws.com/index.html)"
-        ],
-        "RequesterPays": null,
-        "Host": null,
-        "AccountRequired": null
-    },
-    {
         "Name": "CMAS Data Warehouse - CMAQ 2018 Modeling Platform",
         "Description": "CMAQ 2018 Modeling Platform",
         "ARN": "arn:aws:s3:::cmas-cmaq-modeling-platform-2018",
@@ -587,25 +549,6 @@
         "AccountRequired": null
     },
     {
-        "Name": "CMAS Data Warehouse - EQUATES CONUS-1 Benchmark Data with MCIP data compressed using nc4 compression",
-        "Description": "EQUATES CONUS-1 Benchmark Data with MCIP data compressed using nc4 compression",
-        "ARN": "arn:aws:s3:::cmas-equates-conus1-benchmark",
-        "Region": "us-east-1",
-        "Type": "S3 Bucket",
-        "Documentation": "https://dataverse.unc.edu/dataverse/cmascenter",
-        "Contact": "cmas@unc.edu",
-        "ManagedBy": "[CMAS CENTER](https://cmascenter.org/)",
-        "UpdateFrequency": "New data is added as soon as it is available.",
-        "License": "There are no restrictions on the use of this data. US EPA License (https://paste",
-        "Tags": "aws-pds, air quality, meteorological, geospatial, environmental, sustainability, climate",
-        "Explore": [
-            "[Browse Bucket](https://cmas-equates-conus1-benchmark.s3.amazonaws.com/index.html)"
-        ],
-        "RequesterPays": null,
-        "Host": null,
-        "AccountRequired": null
-    },
-    {
         "Name": "CMAS Data Warehouse - EQUATES EPA\u2019s Air QUAlity TimE Series Project Data",
         "Description": "EQUATES EPA\u2019s Air QUAlity TimE Series Project Data",
         "ARN": "arn:aws:s3:::cmas-equates",
@@ -619,25 +562,6 @@
         "Tags": "aws-pds, air quality, meteorological, geospatial, environmental, sustainability, climate",
         "Explore": [
             "[Browse Bucket](https://cmas-equates.s3.amazonaws.com/index.html)"
-        ],
-        "RequesterPays": null,
-        "Host": null,
-        "AccountRequired": null
-    },
-    {
-        "Name": "CMAS Data Warehouse - MCIP Input and Output Data",
-        "Description": "MCIP Input and Output Data",
-        "ARN": "arn:aws:s3:::cmas-mcip",
-        "Region": "us-east-1",
-        "Type": "S3 Bucket",
-        "Documentation": "https://dataverse.unc.edu/dataverse/cmascenter",
-        "Contact": "cmas@unc.edu",
-        "ManagedBy": "[CMAS CENTER](https://cmascenter.org/)",
-        "UpdateFrequency": "New data is added as soon as it is available.",
-        "License": "There are no restrictions on the use of this data. US EPA License (https://paste",
-        "Tags": "aws-pds, air quality, meteorological, geospatial, environmental, sustainability, climate",
-        "Explore": [
-            "[Browse Bucket](https://cmas-mcip.s3.amazonaws.com/index.html)"
         ],
         "RequesterPays": null,
         "Host": null,
@@ -2535,8 +2459,8 @@
         "Type": "S3 Bucket",
         "Documentation": "http://github.com/gnss-ro/aws-opendata",
         "Contact": "Stephen Leroy (sleroy@aer.com)",
-        "ManagedBy": "Atmospheric and Environmental Research, Inc.",
-        "UpdateFrequency": "The dataset is updated monthly for JPL and CDAAC contributions only.",
+        "ManagedBy": "Verisk Atmospheric and Environmental Research, Inc.",
+        "UpdateFrequency": "The dataset is updated monthly for UCAR and ROM SAF contributions only. The upda",
         "License": "A Creative Commons open-use licence (https://www.ucar.edu/terms-of-use/data) app",
         "Tags": "aws-pds, atmosphere, climate, earth observation, global, signal processing, weather",
         "Explore": [
@@ -2691,6 +2615,23 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region)",
         "Description": "GBIF species occurrence data in Parquet format (af-south-1 region)",
+        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-af-south-1-object_created",
+        "Region": "af-south-1",
+        "Type": "SNS Topic",
+        "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master",
+        "Contact": "helpdesk@gbif.org",
+        "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
+        "UpdateFrequency": "Snapshots of GBIF are taken on a monthly basis",
+        "License": "[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) under the GBIF [term",
+        "Tags": "aws-pds, earth observation, biodiversity, bioinformatics, conservation, life sciences",
+        "Explore": null,
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null
+    },
+    {
+        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region)",
+        "Description": "GBIF species occurrence data in Parquet format (af-south-1 region)",
         "ARN": "arn:aws:s3:::gbif-open-data-af-south-1",
         "Region": "af-south-1",
         "Type": "S3 Bucket",
@@ -2708,10 +2649,10 @@
         "AccountRequired": null
     },
     {
-        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region)",
-        "Description": "GBIF species occurrence data in Parquet format (af-south-1 region)",
-        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-af-south-1-object_created",
-        "Region": "af-south-1",
+        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
+        "Description": "GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
+        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-ap-southeast-2-object_created",
+        "Region": "ap-southeast-2",
         "Type": "SNS Topic",
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master",
         "Contact": "helpdesk@gbif.org",
@@ -2739,23 +2680,6 @@
         "Explore": [
             "[Browse bucket](https://gbif-open-data-ap-southeast-2.s3.ap-southeast-2.amazonaws.com/index.html)"
         ],
-        "RequesterPays": null,
-        "Host": null,
-        "AccountRequired": null
-    },
-    {
-        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
-        "Description": "GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
-        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-ap-southeast-2-object_created",
-        "Region": "ap-southeast-2",
-        "Type": "SNS Topic",
-        "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master",
-        "Contact": "helpdesk@gbif.org",
-        "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
-        "UpdateFrequency": "Snapshots of GBIF are taken on a monthly basis",
-        "License": "[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) under the GBIF [term",
-        "Tags": "aws-pds, earth observation, biodiversity, bioinformatics, conservation, life sciences",
-        "Explore": null,
         "RequesterPays": null,
         "Host": null,
         "AccountRequired": null
@@ -2799,25 +2723,6 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (sa-east-1 region)",
         "Description": "GBIF species occurrence data in Parquet format (sa-east-1 region)",
-        "ARN": "arn:aws:s3:::gbif-open-data-sa-east-1",
-        "Region": "sa-east-1",
-        "Type": "S3 Bucket",
-        "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master",
-        "Contact": "helpdesk@gbif.org",
-        "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
-        "UpdateFrequency": "Snapshots of GBIF are taken on a monthly basis",
-        "License": "[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) under the GBIF [term",
-        "Tags": "aws-pds, earth observation, biodiversity, bioinformatics, conservation, life sciences",
-        "Explore": [
-            "[Browse bucket](https://gbif-open-data-sa-east-1.s3.sa-east-1.amazonaws.com/index.html)"
-        ],
-        "RequesterPays": null,
-        "Host": null,
-        "AccountRequired": null
-    },
-    {
-        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (sa-east-1 region)",
-        "Description": "GBIF species occurrence data in Parquet format (sa-east-1 region)",
         "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-sa-east-1-object_created",
         "Region": "sa-east-1",
         "Type": "SNS Topic",
@@ -2833,18 +2738,20 @@
         "AccountRequired": null
     },
     {
-        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (us-east-1 region)",
-        "Description": "GBIF species occurrence data in Parquet format (us-east-1 region)",
-        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-us-east-1-object_created",
-        "Region": "us-east-1",
-        "Type": "SNS Topic",
+        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (sa-east-1 region)",
+        "Description": "GBIF species occurrence data in Parquet format (sa-east-1 region)",
+        "ARN": "arn:aws:s3:::gbif-open-data-sa-east-1",
+        "Region": "sa-east-1",
+        "Type": "S3 Bucket",
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
         "UpdateFrequency": "Snapshots of GBIF are taken on a monthly basis",
         "License": "[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) under the GBIF [term",
         "Tags": "aws-pds, earth observation, biodiversity, bioinformatics, conservation, life sciences",
-        "Explore": null,
+        "Explore": [
+            "[Browse bucket](https://gbif-open-data-sa-east-1.s3.sa-east-1.amazonaws.com/index.html)"
+        ],
         "RequesterPays": null,
         "Host": null,
         "AccountRequired": null
@@ -2864,6 +2771,23 @@
         "Explore": [
             "[Browse bucket](https://gbif-open-data-us-east-1.s3.us-east-1.amazonaws.com/index.html)"
         ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null
+    },
+    {
+        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (us-east-1 region)",
+        "Description": "GBIF species occurrence data in Parquet format (us-east-1 region)",
+        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-us-east-1-object_created",
+        "Region": "us-east-1",
+        "Type": "SNS Topic",
+        "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master",
+        "Contact": "helpdesk@gbif.org",
+        "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
+        "UpdateFrequency": "Snapshots of GBIF are taken on a monthly basis",
+        "License": "[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) under the GBIF [term",
+        "Tags": "aws-pds, earth observation, biodiversity, bioinformatics, conservation, life sciences",
+        "Explore": null,
         "RequesterPays": null,
         "Host": null,
         "AccountRequired": null
@@ -3477,6 +3401,25 @@
         "Tags": "aws-pds, agriculture, earth observation, aerial imagery, geospatial, natural resource, regulatory, sustainability, cog",
         "Explore": null,
         "RequesterPays": true,
+        "Host": null,
+        "AccountRequired": null
+    },
+    {
+        "Name": "NASA / USGS Controlled THEMIS Mosaics",
+        "Description": "Scenes and metadata",
+        "ARN": "arn:aws:s3:::astrogeo-ard/mars/mo/themis/controlled_mosaics/",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Documentation": "https://stac.astrogeology.usgs.gov/docs/data/mars/themis_controlled_mosaics/",
+        "Contact": "https://answers.usgs.gov/",
+        "ManagedBy": "[NASA](https://www.nasa.gov)",
+        "UpdateFrequency": "None planned.",
+        "License": "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)",
+        "Tags": "aws-pds, planetary, satellite imagery, stac, cog",
+        "Explore": [
+            "[STAC Catalog](https://stac.astrogeology.usgs.gov/browser-dev/#/collections/mo_themis_controlled_mosaics)"
+        ],
+        "RequesterPays": null,
         "Host": null,
         "AccountRequired": null
     },
