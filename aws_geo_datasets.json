@@ -894,11 +894,11 @@
     {
         "Name": "Crowdsourced Bathymetry - Crowdsourced bathymetry data",
         "Description": "Crowdsourced bathymetry data",
-        "ARN": "arn:aws:s3:::noaa-bathymetry-pds",
+        "ARN": "arn:aws:s3:::noaa-dcdb-bathymetry-pds",
         "Region": "us-east-1",
         "Type": "S3 Bucket",
         "Explore": [
-            "[Browse Bucket](https://noaa-bathymetry-pds.s3.amazonaws.com/index.html#csv/)"
+            "[Browse Bucket](https://noaa-dcdb-bathymetry-pds.s3.amazonaws.com/index.html)"
         ],
         "Documentation": "https://noaa-bathymetry-pds.s3.amazonaws.com/readme.html",
         "Contact": "mb.info@noaa.gov",
@@ -913,7 +913,7 @@
     {
         "Name": "Crowdsourced Bathymetry - Notifications for CSB data",
         "Description": "Notifications for CSB data",
-        "ARN": "arn:aws:sns:us-east-1:123901341784:NewBathymetryObject",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewDCDBBathymetryObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -5052,24 +5052,7 @@
     {
         "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA21Object",
-        "Region": "us-east-1",
-        "Type": "SNS Topic",
-        "Explore": null,
-        "Documentation": "https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/JPSS",
-        "Contact": "For any questions regarding data delivery or any general questions regarding the",
-        "ManagedBy": "[NOAA](http://www.noaa.gov/)",
-        "UpdateFrequency": "New data is added as soon as it's available",
-        "License": "Open Data. There are no restrictions on the use of this data.",
-        "Tags": "aws-pds, agriculture, climate, meteorological, weather",
-        "RequesterPays": null,
-        "AccountRequired": null,
-        "Host": null
-    },
-    {
-        "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewSNPPObject",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA20Object",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -5103,7 +5086,24 @@
     {
         "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA20Object",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewSNPPObject",
+        "Region": "us-east-1",
+        "Type": "SNS Topic",
+        "Explore": null,
+        "Documentation": "https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/JPSS",
+        "Contact": "For any questions regarding data delivery or any general questions regarding the",
+        "ManagedBy": "[NOAA](http://www.noaa.gov/)",
+        "UpdateFrequency": "New data is added as soon as it's available",
+        "License": "Open Data. There are no restrictions on the use of this data.",
+        "Tags": "aws-pds, agriculture, climate, meteorological, weather",
+        "RequesterPays": null,
+        "AccountRequired": null,
+        "Host": null
+    },
+    {
+        "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
+        "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA21Object",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
