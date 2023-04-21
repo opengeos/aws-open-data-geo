@@ -3232,6 +3232,42 @@
         "Host": null
     },
     {
+        "Name": "Korean Meteorlogical Agency (KMA) GK-2A Satellite Data - GK2A Imagery",
+        "Description": "GK2A Imagery",
+        "ARN": "arn:aws:s3:::noaa-gk2a-pds",
+        "Region": "us-east-1",
+        "Type": "S3 Bucket",
+        "Documentation": "https://nmsc.kma.go.kr/enhome/html/base/cmm/selectPage.do?page=satellite.gk2a.fa",
+        "Contact": "For any questions regarding data delivery or any general questions regarding the",
+        "ManagedBy": "[NOAA](http://www.noaa.gov/)",
+        "UpdateFrequency": "10 minutes for Full Disk, 2 minutes for  4 visible channels and 12 infrared chan",
+        "License": "Open Data. There are no restrictions on the use of this data.",
+        "Tags": "aws-pds, agriculture, geospatial, weather, earth observation, meteorological, disaster response, satellite imagery",
+        "Explore": [
+            "[Browse Bucket](https://noaa-gk2a-pds.s3.amazonaws.com/index.html)"
+        ],
+        "RequesterPays": null,
+        "AccountRequired": null,
+        "Host": null
+    },
+    {
+        "Name": "Korean Meteorlogical Agency (KMA) GK-2A Satellite Data - New data notifications for GK2A, only Lambda and SQS protocols allowed",
+        "Description": "New data notifications for GK2A, only Lambda and SQS protocols allowed",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewGK2AObject",
+        "Region": "us-east-1",
+        "Type": "SNS Topic",
+        "Documentation": "https://nmsc.kma.go.kr/enhome/html/base/cmm/selectPage.do?page=satellite.gk2a.fa",
+        "Contact": "For any questions regarding data delivery or any general questions regarding the",
+        "ManagedBy": "[NOAA](http://www.noaa.gov/)",
+        "UpdateFrequency": "10 minutes for Full Disk, 2 minutes for  4 visible channels and 12 infrared chan",
+        "License": "Open Data. There are no restrictions on the use of this data.",
+        "Tags": "aws-pds, agriculture, geospatial, weather, earth observation, meteorological, disaster response, satellite imagery",
+        "Explore": null,
+        "RequesterPays": null,
+        "AccountRequired": null,
+        "Host": null
+    },
+    {
         "Name": "Low Altitude Disaster Imagery (LADI) Dataset",
         "Description": "LADI dataset: images and labels",
         "ARN": "arn:aws:s3:::ladi",
@@ -3543,6 +3579,25 @@
         "Tags": "aws-pds, planetary, satellite imagery, stac, cog",
         "Explore": [
             "[STAC Catalog](https://stac.astrogeology.usgs.gov/browser-dev/#/collections/galileo_usgs_photogrammetrically_controlled_observations)"
+        ],
+        "RequesterPays": null,
+        "AccountRequired": null,
+        "Host": null
+    },
+    {
+        "Name": "NASA / USGS Mars Reconnaissance Orbiter (MRO) Context Camera (CTX) Targeted DTMs",
+        "Description": "DTMs, orthoimages, error images, and quality assurance metrics",
+        "ARN": "arn:aws:s3:::astrogeo-ard/mars/mro/ctx/controlled/usgs/",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Documentation": "https://stac.astrogeology.usgs.gov/docs/data/mars/ctxdtms/",
+        "Contact": "https://answers.usgs.gov/",
+        "ManagedBy": "[NASA](https://www.nasa.gov)",
+        "UpdateFrequency": "Updated as new stereoapirs are processed",
+        "License": "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)",
+        "Tags": "aws-pds, planetary, satellite imagery, elevation, stac, cog",
+        "Explore": [
+            "[STAC Catalog](https://stac.astrogeology.usgs.gov/browser-dev/#/collections/mro_ctx_controlled_usgs_dtms)"
         ],
         "RequesterPays": null,
         "AccountRequired": null,
@@ -5105,23 +5160,6 @@
     {
         "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA21Object",
-        "Region": "us-east-1",
-        "Type": "SNS Topic",
-        "Documentation": "https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/JPSS",
-        "Contact": "For any questions regarding data delivery or any general questions regarding the",
-        "ManagedBy": "[NOAA](http://www.noaa.gov/)",
-        "UpdateFrequency": "New data is added as soon as it's available",
-        "License": "Open Data. There are no restrictions on the use of this data.",
-        "Tags": "aws-pds, agriculture, climate, meteorological, weather",
-        "Explore": null,
-        "RequesterPays": null,
-        "AccountRequired": null,
-        "Host": null
-    },
-    {
-        "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
         "ARN": "arn:aws:sns:us-east-1:709902155096:NewSNPPObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
@@ -5139,7 +5177,7 @@
     {
         "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA20Object",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewJPSSObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Documentation": "https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/JPSS",
@@ -5156,7 +5194,24 @@
     {
         "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewJPSSObject",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA21Object",
+        "Region": "us-east-1",
+        "Type": "SNS Topic",
+        "Documentation": "https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/JPSS",
+        "Contact": "For any questions regarding data delivery or any general questions regarding the",
+        "ManagedBy": "[NOAA](http://www.noaa.gov/)",
+        "UpdateFrequency": "New data is added as soon as it's available",
+        "License": "Open Data. There are no restrictions on the use of this data.",
+        "Tags": "aws-pds, agriculture, climate, meteorological, weather",
+        "Explore": null,
+        "RequesterPays": null,
+        "AccountRequired": null,
+        "Host": null
+    },
+    {
+        "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
+        "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA20Object",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Documentation": "https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/JPSS",
@@ -5943,7 +5998,7 @@
     {
         "Name": "NOAA U.S. Climate Gridded Dataset (NClimGrid) - New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowe",
         "Description": "New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowe",
-        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridDailyObject",
+        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridMonthlyObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Documentation": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:",
@@ -5960,7 +6015,7 @@
     {
         "Name": "NOAA U.S. Climate Gridded Dataset (NClimGrid) - New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowe",
         "Description": "New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowe",
-        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridMonthlyObject",
+        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridDailyObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Documentation": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:",
