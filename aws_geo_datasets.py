@@ -25,96 +25,108 @@ files = leafmap.find_files(in_dir, ext=".yaml")
 
 print(f"Total number of AWS open datasets: {len(files)}")
 
-datasets = []
-names = {}
 
-geo_tags = [
-    "gis",
-    "earth observation",
-    "events",
-    "mapping",
-    "meteorological",
-    "environmental",
-    "transportation",
-    "geospatial",
-    "satellite imagery",
-]
+def generate_datasets(files, max_chars=80, sep_tags=False):
+    datasets = []
+    names = {}
 
-for file in files:
-    dataset = {}
-    with open(file, "r") as f:
-        dataset = yaml.safe_load(f)
+    geo_tags = [
+        "gis",
+        "earth observation",
+        "events",
+        "mapping",
+        "meteorological",
+        "environmental",
+        "transportation",
+        "geospatial",
+        "satellite imagery",
+    ]
 
-        if "Deprecated" in dataset:
-            continue
+    for file in files:
+        dataset = {}
+        with open(file, "r") as f:
+            dataset = yaml.safe_load(f)
 
-        tags = dataset.get("Tags", [])
-        name = dataset.get("Name", "")
+            if "Deprecated" in dataset:
+                continue
 
-        if bool(set(geo_tags) & set(tags)):
+            tags = dataset.get("Tags", [])
+            name = dataset.get("Name", "")
 
-            basename = os.path.basename(file)
-            out_file = os.path.join("datasets", basename)
+            if bool(set(geo_tags) & set(tags)):
+                basename = os.path.basename(file)
+                out_file = os.path.join("datasets", basename)
 
-            shutil.copy(file, out_file)
+                shutil.copy(file, out_file)
 
-            resources = dataset.get("Resources", [])
-            names[name] = len(resources)
+                resources = dataset.get("Resources", [])
+                names[name] = len(resources)
 
-            for resource in resources:
+                for resource in resources:
+                    before_href = (
+                        resource["Description"].split("](")[0].replace("[", "")
+                    )
+                    if len(resource["Description"].split("](")) > 1:
+                        after_href = (
+                            resource["Description"].split("](")[1].split(")")[1]
+                        )
+                    else:  # No hyperlink
+                        after_href = ""
 
-                before_href = resource["Description"].split("](")[0].replace("[", "")
-                if len(resource["Description"].split("](")) > 1:
-                    after_href = resource["Description"].split("](")[1].split(")")[1]
-                else:  # No hyperlink
-                    after_href = ""
+                    resource["Description"] = (
+                        f"{before_href}{after_href}"[:max_chars]
+                        .replace("\n", "")
+                        .replace(".", "")
+                        .replace("or [SQS", "")
+                        .replace("(ORC", "")
+                        .replace("[", "")
+                        .replace("(2007-2014", "(2007-2014)")
+                        .replace("(2007-2013", "(2007-2013)")
+                        .strip()
+                    )
 
-                resource["Description"] = (
-                    f"{before_href}{after_href}"[:max_chars]
-                    .replace("\n", "")
-                    .replace(".", "")
-                    .replace("or [SQS", "")
-                    .replace("(ORC", "")
-                    .replace("[", "")
-                    .replace("(2007-2014", "(2007-2014)")
-                    .replace("(2007-2013", "(2007-2013)")
-                    .strip()
-                )
+                    item = {}
 
-                item = {}
+                    if names[name] > 1:
+                        item["Name"] = f"{name} - {resource['Description']}"
+                    else:
+                        item["Name"] = name
 
-                if names[name] > 1:
-                    item["Name"] = f"{name} - {resource['Description']}"
-                else:
-                    item["Name"] = name
+                    for key in resource:
+                        item[key] = resource[key]
 
-                for key in resource:
-                    item[key] = resource[key]
+                    item["Documentation"] = (
+                        dataset["Documentation"]
+                        .replace("<br/>", "")
+                        .replace("\n", "")[:max_chars]
+                    )
+                    item["Contact"] = (
+                        dataset["Contact"]
+                        .replace("<br/>", "")
+                        .replace("\n", "")[:max_chars]
+                    )
+                    item["ManagedBy"] = dataset["ManagedBy"][:max_chars]
+                    item["UpdateFrequency"] = dataset["UpdateFrequency"][:max_chars]
+                    item["License"] = dataset["License"].replace("\n", "")[:max_chars]
+                    if sep_tags:
+                        item["Tags"] = dataset["Tags"]
+                    else:
+                        item["Tags"] = ", ".join(dataset["Tags"])
 
-                item["Documentation"] = (
-                    dataset["Documentation"]
-                    .replace("<br/>", "")
-                    .replace("\n", "")[:max_chars]
-                )
-                item["Contact"] = (
-                    dataset["Contact"]
-                    .replace("<br/>", "")
-                    .replace("\n", "")[:max_chars]
-                )
-                item["ManagedBy"] = dataset["ManagedBy"][:max_chars]
-                item["UpdateFrequency"] = dataset["UpdateFrequency"][:max_chars]
-                item["License"] = dataset["License"].replace("\n", "")[:max_chars]
-                item["Tags"] = ", ".join(dataset["Tags"])
+                    datasets.append(item)
 
-                datasets.append(item)
+    print(f"Total number of geospatial datasets: {len(datasets)}")
+    return datasets
 
 
-print(f"Total number of geospatial datasets: {len(datasets)}")
-
-df = pd.DataFrame(datasets)
+tsv_datasets = generate_datasets(files, max_chars=max_chars, sep_tags=False)
+df = pd.DataFrame(tsv_datasets)
 df = df.sort_values(by="Name")
 df.to_csv("aws_geo_datasets.tsv", index=False, sep="\t")
 
+json_datasets = generate_datasets(files, max_chars=None, sep_tags=True)
+df = pd.DataFrame(json_datasets)
+df = df.sort_values(by="Name")
 data = json.loads(df.to_json(orient="records"))
 
 with open("aws_geo_datasets.json", "w") as f:
