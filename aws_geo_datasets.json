@@ -6439,7 +6439,9 @@
             "elevation"
         ],
         "RequesterPays": false,
-        "Explore": null,
+        "Explore": [
+            "[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html)"
+        ],
         "Host": null,
         "AccountRequired": null
     },
@@ -6463,7 +6465,9 @@
             "elevation"
         ],
         "RequesterPays": false,
-        "Explore": null,
+        "Explore": [
+            "[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/)"
+        ],
         "Host": null,
         "AccountRequired": null
     },
@@ -6487,7 +6491,9 @@
             "elevation"
         ],
         "RequesterPays": false,
-        "Explore": null,
+        "Explore": [
+            "[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/)"
+        ],
         "Host": null,
         "AccountRequired": null
     },
@@ -6511,7 +6517,9 @@
             "elevation"
         ],
         "RequesterPays": false,
-        "Explore": null,
+        "Explore": [
+            "[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/obliques/)"
+        ],
         "Host": null,
         "AccountRequired": null
     },
@@ -6535,7 +6543,9 @@
             "elevation"
         ],
         "RequesterPays": false,
-        "Explore": null,
+        "Explore": [
+            "[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/orthos/)"
+        ],
         "Host": null,
         "AccountRequired": null
     },
@@ -6559,7 +6569,9 @@
             "elevation"
         ],
         "RequesterPays": false,
-        "Explore": null,
+        "Explore": [
+            "[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/PointCloud/)"
+        ],
         "Host": null,
         "AccountRequired": null
     },
@@ -6583,7 +6595,9 @@
             "elevation"
         ],
         "RequesterPays": false,
-        "Explore": null,
+        "Explore": [
+            "[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/DEM/)"
+        ],
         "Host": null,
         "AccountRequired": null
     },
@@ -6607,7 +6621,9 @@
             "elevation"
         ],
         "RequesterPays": false,
-        "Explore": null,
+        "Explore": [
+            "[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/SpotElevations/)"
+        ],
         "Host": null,
         "AccountRequired": null
     },
@@ -6631,7 +6647,9 @@
             "elevation"
         ],
         "RequesterPays": false,
-        "Explore": null,
+        "Explore": [
+            "[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/KyTopoMapSeries/)"
+        ],
         "Host": null,
         "AccountRequired": null
     },
@@ -6655,7 +6673,9 @@
             "elevation"
         ],
         "RequesterPays": false,
-        "Explore": null,
+        "Explore": [
+            "[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/Contours/)"
+        ],
         "Host": null,
         "AccountRequired": null
     },
