@@ -15040,7 +15040,7 @@
     {
         "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA21Object",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewJPSSObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -15064,7 +15064,7 @@
     {
         "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA20Object",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA21Object",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -15112,7 +15112,7 @@
     {
         "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewJPSSObject",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA20Object",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -16624,7 +16624,7 @@
     {
         "Name": "NOAA U.S. Climate Gridded Dataset (NClimGrid) - New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridDailyObject",
+        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridMonthlyObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -16648,7 +16648,7 @@
     {
         "Name": "NOAA U.S. Climate Gridded Dataset (NClimGrid) - New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridMonthlyObject",
+        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridDailyObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -20805,6 +20805,31 @@
             "machine learning",
             "environmental",
             "open source software"
+        ],
+        "RequesterPays": null,
+        "AccountRequired": null,
+        "Host": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Planette C3S Seasonal Forecast Data",
+        "Description": "C3S Seasonal Forecast Hindcasts and Forecasts (Zarr format)",
+        "ARN": "arn:aws:s3:::planette-c3s-seasonal-forecasts/seas5/",
+        "Region": "us-east-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[Browse Dataset](https://planette-c3s-seasonal-forecasts.s3.amazonaws.com/index.html#seas5)"
+        ],
+        "Documentation": "https://github.com/PlanetteAI/planette_c3s_archive/blob/main/README.md",
+        "Contact": "aodhan.sweeney@planette.ai",
+        "ManagedBy": "Planette.ai",
+        "UpdateFrequency": "Monthly",
+        "License": "Copernicus Licence (similar to CC-BY-4.0): You are free to share and adapt the material for any purpose, even commercially, provided that you give appropriate credit.https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf",
+        "Tags": [
+            "aws-pds",
+            "climate",
+            "weather",
+            "earth observation"
         ],
         "RequesterPays": null,
         "AccountRequired": null,
