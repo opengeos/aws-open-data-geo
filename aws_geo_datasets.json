@@ -6398,10 +6398,10 @@
         "Explore": [
             "[Browse Bucket](https://dynamical-ecmwf-ifs-ens.s3.amazonaws.com/index.html)"
         ],
-        "Documentation": "https://dynamical.org/catalog/models/ecmwf-ifs-ens/",
+        "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
-        "UpdateFrequency": "ECMWF IFS ENS Forecast, 15 day, 0.25 degree: Forecasts initialized every 24 hours",
+        "UpdateFrequency": "ECMWF IFS ENS forecast, 15 day, 0.25 degree: Forecasts initialized every 24 hours",
         "License": "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)",
         "Tags": [
             "aws-pds",
@@ -6424,10 +6424,10 @@
         "Region": "us-west-2",
         "Type": "SNS Topic",
         "Explore": null,
-        "Documentation": "https://dynamical.org/catalog/models/ecmwf-ifs-ens/",
+        "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
-        "UpdateFrequency": "ECMWF IFS ENS Forecast, 15 day, 0.25 degree: Forecasts initialized every 24 hours",
+        "UpdateFrequency": "ECMWF IFS ENS forecast, 15 day, 0.25 degree: Forecasts initialized every 24 hours",
         "License": "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)",
         "Tags": [
             "aws-pds",
@@ -14777,7 +14777,7 @@
         "Explore": [
             "[Browse Bucket](https://dynamical-noaa-gefs.s3.amazonaws.com/index.html)"
         ],
-        "Documentation": "https://dynamical.org/catalog/models/noaa-gefs/",
+        "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
         "UpdateFrequency": "NOAA GEFS forecast, 35 day: Forecasts initialized every 24 hours; NOAA GEFS analysis: 3.0 hours",
@@ -14803,7 +14803,7 @@
         "Region": "us-west-2",
         "Type": "SNS Topic",
         "Explore": null,
-        "Documentation": "https://dynamical.org/catalog/models/noaa-gefs/",
+        "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
         "UpdateFrequency": "NOAA GEFS forecast, 35 day: Forecasts initialized every 24 hours; NOAA GEFS analysis: 3.0 hours",
@@ -14831,7 +14831,7 @@
         "Explore": [
             "[Browse Bucket](https://dynamical-noaa-gfs.s3.amazonaws.com/index.html)"
         ],
-        "Documentation": "https://dynamical.org/catalog/models/noaa-gfs/",
+        "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
         "UpdateFrequency": "NOAA GFS analysis: 1 hour; NOAA GFS forecast: Forecasts initialized every 6 hours",
@@ -14857,7 +14857,7 @@
         "Region": "us-west-2",
         "Type": "SNS Topic",
         "Explore": null,
-        "Documentation": "https://dynamical.org/catalog/models/noaa-gfs/",
+        "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
         "UpdateFrequency": "NOAA GFS analysis: 1 hour; NOAA GFS forecast: Forecasts initialized every 6 hours",
@@ -15749,7 +15749,7 @@
         "Explore": [
             "[Browse Bucket](https://dynamical-noaa-hrrr.s3.amazonaws.com/index.html)"
         ],
-        "Documentation": "https://dynamical.org/catalog/models/noaa-hrrr/",
+        "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
         "UpdateFrequency": "NOAA HRRR forecast, 48 hour: Forecasts initialized every 6 hours; NOAA HRRR analysis: 1 hour",
@@ -15775,7 +15775,7 @@
         "Region": "us-west-2",
         "Type": "SNS Topic",
         "Explore": null,
-        "Documentation": "https://dynamical.org/catalog/models/noaa-hrrr/",
+        "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
         "UpdateFrequency": "NOAA HRRR forecast, 48 hour: Forecasts initialized every 6 hours; NOAA HRRR analysis: 1 hour",
@@ -16265,7 +16265,7 @@
         "Explore": [
             "[Browse Bucket](https://dynamical-noaa-mrms.s3.amazonaws.com/index.html)"
         ],
-        "Documentation": "https://dynamical.org/catalog/models/noaa-mrms/",
+        "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
         "UpdateFrequency": "NOAA MRMS CONUS analysis, hourly: 1 hour",
@@ -16291,7 +16291,7 @@
         "Region": "us-west-2",
         "Type": "SNS Topic",
         "Explore": null,
-        "Documentation": "https://dynamical.org/catalog/models/noaa-mrms/",
+        "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
         "UpdateFrequency": "NOAA MRMS CONUS analysis, hourly: 1 hour",
