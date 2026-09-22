@@ -1256,7 +1256,7 @@
         "ControlledAccess": null
     },
     {
-        "Name": "Artemis and Image Safari Agricultural Imaging Dataset - Artemis structured phenotyping images (1,387,663 images, four crops: common bean, cowpea, soybean, sorghum) with linked agronomic, genotypic, and environmental metadata Annotations are published for common bean, cowpea, and sorghum; soybean has imagery only Field images (JPEG, original acquisition resolution) and annotations organised by crop under annotations/standard/instance_segmentation/<set>/ and annotations/standard/object_detection/<set>/ (COCO JSON and related formats) Parquet and CSV metadata files under each crop directory's metadata/ subtree",
+        "Name": "Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Crop Species - Artemis structured phenotyping images (1,387,663 images, four crops: common bean, cowpea, soybean, sorghum) with linked agronomic, genotypic, and environmental metadata Annotations are published for common bean, cowpea, and sorghum; soybean has imagery only Field images (JPEG, original acquisition resolution) and annotations organised by crop under annotations/standard/instance_segmentation/<set>/ and annotations/standard/object_detection/<set>/ (COCO JSON and related formats) Parquet and CSV metadata files under each crop directory's metadata/ subtree",
         "Description": "Artemis structured phenotyping images (1,387,663 images, four crops: common bean, cowpea, soybean, sorghum) with linked agronomic, genotypic, and environmental metadata Annotations are published for common bean, cowpea, and sorghum; soybean has imagery only Field images (JPEG, original acquisition resolution) and annotations organised by crop under annotations/standard/instance_segmentation/<set>/ and annotations/standard/object_detection/<set>/ (COCO JSON and related formats) Parquet and CSV metadata files under each crop directory's metadata/ subtree",
         "ARN": "arn:aws:s3:::alliance-artemis-imagesafari/Artemis",
         "Region": "us-west-2",
@@ -1289,7 +1289,7 @@
         "ControlledAccess": null
     },
     {
-        "Name": "Artemis and Image Safari Agricultural Imaging Dataset - Image Safari diversity-driven crop images (6,081,555 images, 18 crops) across nine countries in sub-Saharan Africa Annotations are published for 16 of 18 crops; finger millet and lentil have imagery only Field images (JPEG, original acquisition resolution) and annotations organised by crop under annotations for point, semantic_segmentation, scribble, object_detection, and instance_segmentation under annotations/standard/<modality>/<set>/ (COCO JSON, PNG masks, and related formats) Per-image metadata is provided as JSON sidecar files",
+        "Name": "Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Crop Species - Image Safari diversity-driven crop images (6,081,555 images, 18 crops) across nine countries in sub-Saharan Africa Annotations are published for 16 of 18 crops; finger millet and lentil have imagery only Field images (JPEG, original acquisition resolution) and annotations organised by crop under annotations for point, semantic_segmentation, scribble, object_detection, and instance_segmentation under annotations/standard/<modality>/<set>/ (COCO JSON, PNG masks, and related formats) Per-image metadata is provided as JSON sidecar files",
         "Description": "Image Safari diversity-driven crop images (6,081,555 images, 18 crops) across nine countries in sub-Saharan Africa Annotations are published for 16 of 18 crops; finger millet and lentil have imagery only Field images (JPEG, original acquisition resolution) and annotations organised by crop under annotations for point, semantic_segmentation, scribble, object_detection, and instance_segmentation under annotations/standard/<modality>/<set>/ (COCO JSON, PNG masks, and related formats) Per-image metadata is provided as JSON sidecar files",
         "ARN": "arn:aws:s3:::alliance-artemis-imagesafari/ImageSafari",
         "Region": "us-west-2",
@@ -1297,6 +1297,37 @@
         "Explore": [
             "[Browse Bucket](https://alliance-artemis-imagesafari.s3.amazonaws.com/index.html#ImageSafari/)"
         ],
+        "Documentation": "https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/README.md",
+        "Contact": "alliance-data-helpdesk@cgiar.org",
+        "ManagedBy": "[Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/)",
+        "UpdateFrequency": "New imagery collected during annual field campaigns is reviewed, annotated, and added to the dataset approximately once per year. Annotation updates and quality corrections are versioned and documented in CHANGELOG.md.\n",
+        "License": "Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0). https://creativecommons.org/licenses/by-sa/4.0/",
+        "Tags": [
+            "aws-pds",
+            "agriculture",
+            "computer vision",
+            "machine learning",
+            "deep learning",
+            "image processing",
+            "imaging",
+            "geospatial",
+            "sustainability",
+            "life sciences",
+            "labeled",
+            "food security"
+        ],
+        "RequesterPays": null,
+        "AccountRequired": null,
+        "Host": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Crop Species - Notifications for new Artemis and Image Safari data",
+        "Description": "Notifications for new Artemis and Image Safari data",
+        "ARN": "arn:aws:sns:us-west-2:066107820359:alliance-artemis-imagesafari-object_created",
+        "Region": "us-west-2",
+        "Type": "SNS Topic",
+        "Explore": null,
         "Documentation": "https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/README.md",
         "Contact": "alliance-data-helpdesk@cgiar.org",
         "ManagedBy": "[Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/)",
@@ -9994,12 +10025,10 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
         "Description": "GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
-        "ARN": "arn:aws:s3:::gbif-open-data-ap-southeast-2",
+        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-ap-southeast-2-object_created",
         "Region": "ap-southeast-2",
-        "Type": "S3 Bucket",
-        "Explore": [
-            "[Browse bucket](https://gbif-open-data-ap-southeast-2.s3.ap-southeast-2.amazonaws.com/index.html)"
-        ],
+        "Type": "SNS Topic",
+        "Explore": null,
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
@@ -10021,10 +10050,12 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
         "Description": "GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
-        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-ap-southeast-2-object_created",
+        "ARN": "arn:aws:s3:::gbif-open-data-ap-southeast-2",
         "Region": "ap-southeast-2",
-        "Type": "SNS Topic",
-        "Explore": null,
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[Browse bucket](https://gbif-open-data-ap-southeast-2.s3.ap-southeast-2.amazonaws.com/index.html)"
+        ],
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
@@ -10150,10 +10181,12 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (us-east-1 region)",
         "Description": "GBIF species occurrence data in Parquet format (us-east-1 region)",
-        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-us-east-1-object_created",
+        "ARN": "arn:aws:s3:::gbif-open-data-us-east-1",
         "Region": "us-east-1",
-        "Type": "SNS Topic",
-        "Explore": null,
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[Browse bucket](https://gbif-open-data-us-east-1.s3.us-east-1.amazonaws.com/index.html)"
+        ],
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
@@ -10175,12 +10208,10 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (us-east-1 region)",
         "Description": "GBIF species occurrence data in Parquet format (us-east-1 region)",
-        "ARN": "arn:aws:s3:::gbif-open-data-us-east-1",
+        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-us-east-1-object_created",
         "Region": "us-east-1",
-        "Type": "S3 Bucket",
-        "Explore": [
-            "[Browse bucket](https://gbif-open-data-us-east-1.s3.us-east-1.amazonaws.com/index.html)"
-        ],
+        "Type": "SNS Topic",
+        "Explore": null,
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
