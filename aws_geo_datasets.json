@@ -8142,7 +8142,7 @@
         "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
-        "UpdateFrequency": "ECMWF AIFS Single forecast: Forecasts initialized every 6 hours",
+        "UpdateFrequency": "ECMWF AIFS Single forecast: Forecasts initialized every 6 hours; ECMWF AIFS Single forecast, virtual: Forecasts initialized every 6 hours",
         "License": "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)",
         "Tags": [
             "aws-pds",
@@ -8168,7 +8168,7 @@
         "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
-        "UpdateFrequency": "ECMWF AIFS Single forecast: Forecasts initialized every 6 hours",
+        "UpdateFrequency": "ECMWF AIFS Single forecast: Forecasts initialized every 6 hours; ECMWF AIFS Single forecast, virtual: Forecasts initialized every 6 hours",
         "License": "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)",
         "Tags": [
             "aws-pds",
