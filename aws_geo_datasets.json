@@ -7893,19 +7893,23 @@
         "ControlledAccess": null
     },
     {
-        "Name": "Digital Earth Pacific Mangroves Extent and Density",
-        "Description": "Data access",
-        "ARN": "arn:aws:s3:::dep-public-data",
+        "Name": "Digital Earth Pacific Annual Radar Composite (Sentinel-1, GeoMAD, 10 m)",
+        "Description": "Annual Radar Composite (Sentinel-1, GeoMAD, 10 m) Cloud Optimized GeoTIFFs",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_s1_geomad",
         "Region": "us-west-2",
         "Type": "S3 Bucket",
-        "Explore": null,
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s1_geomad)"
+        ],
         "Documentation": "https://digitalearthpacific.org/#/applications",
         "Contact": "dep@spc.int",
         "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
         "UpdateFrequency": "Annually",
         "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
         "Tags": [
+            "aws-pds",
             "earth observation",
+            "satellite imagery",
             "environmental",
             "climate",
             "geoscience",
@@ -7917,21 +7921,399 @@
         "ControlledAccess": null
     },
     {
-        "Name": "Digital Earth Pacific Water Observatins from Space (WOfS)",
-        "Description": "Data access",
-        "ARN": "arn:aws:s3:::dep-public-data",
+        "Name": "Digital Earth Pacific Annual Shorelines (Landsat, 30 m)",
+        "Description": "Annual Shorelines (Landsat, 30 m) vector data in GeoPackage and PMTiles formats",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_ls_coastlines",
         "Region": "us-west-2",
         "Type": "S3 Bucket",
-        "Explore": null,
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_coastlines)"
+        ],
         "Documentation": "https://digitalearthpacific.org/#/applications",
         "Contact": "dep@spc.int",
         "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
         "UpdateFrequency": "Annually",
         "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
         "Tags": [
+            "aws-pds",
+            "earth observation",
+            "environmental",
+            "coastal",
+            "climate",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Annual Surface Reflectance Composite (Landsat, GeoMAD, 30 m)",
+        "Description": "Annual Surface Reflectance Composite (Landsat, GeoMAD, 30 m) Cloud Optimized GeoTIFFs",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_ls_geomad",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_geomad)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Annually",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "satellite imagery",
+            "land cover",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Annual Surface Reflectance Composite (Sentinel-2, GeoMAD, 10 m)",
+        "Description": "Annual Surface Reflectance Composite (Sentinel-2, GeoMAD, 10 m) Cloud Optimized GeoTIFFs",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_s2_geomad",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_geomad)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Annually",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "satellite imagery",
+            "land cover",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Fractional Land Cover (Landsat, 30 m) - Fractional Land Cover Annual Summary (Landsat, 30 m)",
+        "Description": "Fractional Land Cover Annual Summary (Landsat, 30 m)",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_ls_fc_summary_annual",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_fc_summary_annual)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Scene-based data is added as new Landsat scenes are acquired; summaries are updated annually",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "environmental",
+            "land cover",
+            "agriculture",
+            "sustainability",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Fractional Land Cover (Landsat, 30 m) - Fractional Land Cover, Scene-based (Landsat, 30 m)",
+        "Description": "Fractional Land Cover, Scene-based (Landsat, 30 m)",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_ls_fc",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_fc)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Scene-based data is added as new Landsat scenes are acquired; summaries are updated annually",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "environmental",
+            "land cover",
+            "agriculture",
+            "sustainability",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Intertidal Elevation and Exposure (Sentinel-2/Landsat, 30 m)",
+        "Description": "Intertidal Elevation and Exposure (Sentinel-2/Landsat, 30 m)",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_s2ls_intertidal",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2ls_intertidal)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Irregularly, as new versions are produced",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "coastal",
+            "elevation",
+            "marine",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Mangrove Extent, Density, Change and Condition (Sentinel-2, 10 m) - Mangrove Change and Condition, AMMI (Sentinel-2, 10 m)",
+        "Description": "Mangrove Change and Condition, AMMI (Sentinel-2, 10 m)",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_s2_ammi",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_ammi)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Annually",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "environmental",
+            "coastal",
+            "biodiversity",
+            "carbon",
+            "climate",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Mangrove Extent, Density, Change and Condition (Sentinel-2, 10 m) - Mangrove Extent and Density (Sentinel-2, 10 m)",
+        "Description": "Mangrove Extent and Density (Sentinel-2, 10 m)",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_s2_mangroves",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_mangroves)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Annually",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "environmental",
+            "coastal",
+            "biodiversity",
+            "carbon",
+            "climate",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Satellite-Derived Bathymetry (Sentinel-2, 10 m)",
+        "Description": "Satellite-Derived Bathymetry (Sentinel-2, 10 m)",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_s2_sdb",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_sdb)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Irregularly, as new versions are produced",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "bathymetry",
+            "coastal",
+            "marine",
+            "oceans",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Seagrass Extent, Machine Learning (Sentinel-2, 10 m)",
+        "Description": "Seagrass Extent, Machine Learning (Sentinel-2, 10 m)",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_s2_seagrass",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_seagrass)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Annually",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "marine",
+            "coastal",
+            "biodiversity",
+            "oceans",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Vegetation Height, Satellite-Derived Canopy Height (Sentinel-2, 10 m)",
+        "Description": "Vegetation Height, Satellite-Derived Canopy Height (Sentinel-2, 10 m)",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_s2_vegheight",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_vegheight)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Quarterly",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "environmental",
+            "land cover",
+            "carbon",
+            "biodiversity",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Water Observations from Space (WOfS, Landsat, 30 m) - Water Observations from Space (WOfS) All-Time Summary (Landsat, 30 m)",
+        "Description": "Water Observations from Space (WOfS) All-Time Summary (Landsat, 30 m)",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_ls_wofs_summary_alltime",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_wofs_summary_alltime)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Scene-based data is added as new Landsat scenes are acquired; summaries are updated annually",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
             "earth observation",
             "environmental",
             "water",
+            "surface water",
+            "disaster response",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Water Observations from Space (WOfS, Landsat, 30 m) - Water Observations from Space (WOfS) Annual Summary (Landsat, 30 m)",
+        "Description": "Water Observations from Space (WOfS) Annual Summary (Landsat, 30 m)",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_ls_wofs_summary_annual",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_wofs_summary_annual)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Scene-based data is added as new Landsat scenes are acquired; summaries are updated annually",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "environmental",
+            "water",
+            "surface water",
+            "disaster response",
+            "geoscience",
+            "geospatial"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Digital Earth Pacific Water Observations from Space (WOfS, Landsat, 30 m) - Water Observations from Space (WOfS) Scene-based Surface Water (Landsat, 30 m)",
+        "Description": "Water Observations from Space (WOfS) Scene-based Surface Water (Landsat, 30 m)",
+        "ARN": "arn:aws:s3:::dep-public-data/dep_ls_wofl",
+        "Region": "us-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_wofl)"
+        ],
+        "Documentation": "https://digitalearthpacific.org/#/applications",
+        "Contact": "dep@spc.int",
+        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
+        "UpdateFrequency": "Scene-based data is added as new Landsat scenes are acquired; summaries are updated annually",
+        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "environmental",
+            "water",
+            "surface water",
+            "disaster response",
             "geoscience",
             "geospatial"
         ],
@@ -11585,6 +11967,67 @@
         "ControlledAccess": null
     },
     {
+        "Name": "HESTIA Aggregated Agri-food Life Cycle Assessment (LCA) Data - Aggregated agri-food LCA data as JSON-LD and Parquet, one folder per release",
+        "Description": "Aggregated agri-food LCA data as JSON-LD and Parquet, one folder per release",
+        "ARN": "arn:aws:s3:::hestia-aggregated-data",
+        "Region": "eu-west-2",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[Bucket layout and how to find data](https://www.hestia.earth/guide/guide-accessing-data-aws-open-data)",
+            "[Browse Bucket](https://hestia-aggregated-data.s3.eu-west-2.amazonaws.com/index.html)"
+        ],
+        "Documentation": "https://www.hestia.earth/guide/guide-accessing-data-aws-open-data",
+        "Contact": "community@hestia.earth",
+        "ManagedBy": "[HESTIA](https://www.hestia.earth/), University of Oxford",
+        "UpdateFrequency": "With each HESTIA data release, roughly two to three per year. A release is added here 182 days after its version date, once it is freely available to everyone.",
+        "License": "Creative Commons Attribution 4.0 International (CC-BY 4.0).https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "agriculture",
+            "food security",
+            "sustainability",
+            "climate",
+            "carbon",
+            "environmental",
+            "life sciences",
+            "json",
+            "parquet"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "HESTIA Aggregated Agri-food Life Cycle Assessment (LCA) Data - New object notifications, SQS and Lambda protocols only A release is uploaded object by object and its manifest is written last, so an event for data/jsonld/releases/<version>/manifestjson means that release is complete",
+        "Description": "New object notifications, SQS and Lambda protocols only A release is uploaded object by object and its manifest is written last, so an event for data/jsonld/releases/<version>/manifestjson means that release is complete",
+        "ARN": "arn:aws:sns:eu-west-2:568256617230:hestia-aggregated-data-object-created",
+        "Region": "eu-west-2",
+        "Type": "SNS Topic",
+        "Explore": null,
+        "Documentation": "https://www.hestia.earth/guide/guide-accessing-data-aws-open-data",
+        "Contact": "community@hestia.earth",
+        "ManagedBy": "[HESTIA](https://www.hestia.earth/), University of Oxford",
+        "UpdateFrequency": "With each HESTIA data release, roughly two to three per year. A release is added here 182 days after its version date, once it is freely available to everyone.",
+        "License": "Creative Commons Attribution 4.0 International (CC-BY 4.0).https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "agriculture",
+            "food security",
+            "sustainability",
+            "climate",
+            "carbon",
+            "environmental",
+            "life sciences",
+            "json",
+            "parquet"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
         "Name": "HIRLAM Weather Model - Notifications for new pressure data",
         "Description": "Notifications for new pressure data",
         "ARN": "arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-rcrhirlam-pressure-grib",
@@ -13366,28 +13809,6 @@
             "machine learning",
             "imaging",
             "computer vision"
-        ],
-        "RequesterPays": null,
-        "Host": null,
-        "AccountRequired": null,
-        "ControlledAccess": null
-    },
-    {
-        "Name": "Landsat Geometric Median and Absolute Deviations (GeoMAD) over the Pacific.",
-        "Description": "Data access",
-        "ARN": "arn:aws:s3:::dep-public-data",
-        "Region": "us-west-2",
-        "Type": "S3 Bucket",
-        "Explore": null,
-        "Documentation": "https://digitalearthpacific.org/#/applications",
-        "Contact": "dep@spc.int",
-        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
-        "UpdateFrequency": "Annually",
-        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
-        "Tags": [
-            "earth observation",
-            "geoscience",
-            "geospatial"
         ],
         "RequesterPays": null,
         "Host": null,
@@ -182160,7 +182581,7 @@
     {
         "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA21Object",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA20Object",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -182184,7 +182605,7 @@
     {
         "Name": "NOAA Joint Polar Satellite System (JPSS) - New data notifications for JPSS data, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for JPSS data, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA20Object",
+        "ARN": "arn:aws:sns:us-east-1:709902155096:NewNOAA21Object",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -183872,7 +184293,7 @@
     {
         "Name": "NOAA U.S. Climate Gridded Dataset (NClimGrid) - New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridMonthlyObject",
+        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridDailyObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -183896,7 +184317,7 @@
     {
         "Name": "NOAA U.S. Climate Gridded Dataset (NClimGrid) - New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowed",
         "Description": "New data notifications for Daily NClimGrid, only Lambda and SQS protocols allowed",
-        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridDailyObject",
+        "ARN": "arn:aws:sns:us-east-1:123901341784:NewNClimGridMonthlyObject",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -187703,30 +188124,6 @@
         "ControlledAccess": null
     },
     {
-        "Name": "Pacific Coastlines Change",
-        "Description": "Data access",
-        "ARN": "arn:aws:s3:::dep-public-data",
-        "Region": "us-west-2",
-        "Type": "S3 Bucket",
-        "Explore": null,
-        "Documentation": "https://digitalearthpacific.org/#/applications",
-        "Contact": "dep@spc.int",
-        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
-        "UpdateFrequency": "Annually",
-        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
-        "Tags": [
-            "earth observation",
-            "environmental",
-            "coastal",
-            "geoscience",
-            "geospatial"
-        ],
-        "RequesterPays": null,
-        "Host": null,
-        "AccountRequired": null,
-        "ControlledAccess": null
-    },
-    {
         "Name": "Pacific Ocean Sound Recordings - decimated 16 kHz audio recordings",
         "Description": "decimated 16 kHz audio recordings",
         "ARN": "arn:aws:s3:::pacific-sound-16khz",
@@ -190472,30 +190869,6 @@
         "ControlledAccess": null
     },
     {
-        "Name": "Sentinel-1 Mean and Median Annual Mosaic",
-        "Description": "Data access",
-        "ARN": "arn:aws:s3:::dep-public-data",
-        "Region": "us-west-2",
-        "Type": "S3 Bucket",
-        "Explore": null,
-        "Documentation": "https://digitalearthpacific.org/#/applications",
-        "Contact": "dep@spc.int",
-        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
-        "UpdateFrequency": "Annually",
-        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
-        "Tags": [
-            "earth observation",
-            "environmental",
-            "climate",
-            "geoscience",
-            "geospatial"
-        ],
-        "RequesterPays": null,
-        "Host": null,
-        "AccountRequired": null,
-        "ControlledAccess": null
-    },
-    {
         "Name": "Sentinel-1 Monthly Mosaic",
         "Description": "S1 Monthly Mosaic tiles and metadata",
         "ARN": "arn:aws:s3:::deafrica-sentinel-1",
@@ -191081,28 +191454,6 @@
             "stac"
         ],
         "RequesterPays": false,
-        "Host": null,
-        "AccountRequired": null,
-        "ControlledAccess": null
-    },
-    {
-        "Name": "Sentinel-2 Geometric Median and Absolute Deviations (GeoMAD) over the Pacific",
-        "Description": "Data access",
-        "ARN": "arn:aws:s3:::dep-public-data",
-        "Region": "us-west-2",
-        "Type": "S3 Bucket",
-        "Explore": null,
-        "Documentation": "https://digitalearthpacific.org/#/applications",
-        "Contact": "dep@spc.int",
-        "ManagedBy": "[Pacific Community (SPC)](https://www.spc.int/)",
-        "UpdateFrequency": "Annually",
-        "License": "Digital Earth Pacific Data is available under the Creative CommonsAttribution 4.0 International license https://creativecommons.org/licenses/by/4.0/",
-        "Tags": [
-            "earth observation",
-            "geoscience",
-            "geospatial"
-        ],
-        "RequesterPays": null,
         "Host": null,
         "AccountRequired": null,
         "ControlledAccess": null
