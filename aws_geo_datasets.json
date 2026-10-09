@@ -2366,6 +2366,38 @@
         "ControlledAccess": null
     },
     {
+        "Name": "CMAS Data Warehouse - CMAQ v6 2022 Data",
+        "Description": "CMAQ v6 2022 Data",
+        "ARN": "arn:aws:s3:::cmaq-v6-2022-data",
+        "Region": "us-east-1",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[Browse Bucket](https://cmaq-v6-2022-data.s3.amazonaws.com/index.html)"
+        ],
+        "Documentation": "https://dataverse.unc.edu/dataverse/cmascenter",
+        "Contact": "cmas@unc.edu",
+        "ManagedBy": "[CMAS CENTER](https://cmascenter.org/)",
+        "UpdateFrequency": "New data is added as soon as it is available.",
+        "License": "There are no restrictions on the use of this data. US EPA License (https://pasteur.epa.gov/license/sciencehub-license.html)",
+        "Tags": [
+            "aws-pds",
+            "air quality",
+            "meteorological",
+            "geospatial",
+            "environmental",
+            "climate",
+            "model",
+            "netcdf",
+            "open source software",
+            "MPAS",
+            "cloud computing"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
         "Name": "CMAS Data Warehouse - CMAS WWLLN Lightning Data",
         "Description": "CMAS WWLLN Lightning Data",
         "ARN": "arn:aws:s3:::cmas-wwlln-lightning",
@@ -2503,6 +2535,38 @@
         "Type": "S3 Bucket",
         "Explore": [
             "[Browse Bucket](https://mpas-cmaq.s3.amazonaws.com/index.html)"
+        ],
+        "Documentation": "https://dataverse.unc.edu/dataverse/cmascenter",
+        "Contact": "cmas@unc.edu",
+        "ManagedBy": "[CMAS CENTER](https://cmascenter.org/)",
+        "UpdateFrequency": "New data is added as soon as it is available.",
+        "License": "There are no restrictions on the use of this data. US EPA License (https://pasteur.epa.gov/license/sciencehub-license.html)",
+        "Tags": [
+            "aws-pds",
+            "air quality",
+            "meteorological",
+            "geospatial",
+            "environmental",
+            "climate",
+            "model",
+            "netcdf",
+            "open source software",
+            "MPAS",
+            "cloud computing"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "CMAS Data Warehouse - NEMO 1km Emissions Data for CONUS 2017",
+        "Description": "NEMO 1km Emissions Data for CONUS 2017",
+        "ARN": "arn:aws:s3:::nemo-1km-emissions-data",
+        "Region": "us-east-1",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[Browse Bucket](https://nemo-1km-emissions-data.s3.amazonaws.com/index.html)"
         ],
         "Documentation": "https://dataverse.unc.edu/dataverse/cmascenter",
         "Contact": "cmas@unc.edu",
@@ -2978,6 +3042,36 @@
         "ControlledAccess": null
     },
     {
+        "Name": "CMAS Data Warehouse - Notifications for new data in CMAQ v6 2022 Data",
+        "Description": "Notifications for new data in CMAQ v6 2022 Data",
+        "ARN": "arn:aws:sns:us-east-1:703786580975:cmaq-v6-2022-data-object_created",
+        "Region": "us-east-1",
+        "Type": "SNS Topic",
+        "Explore": null,
+        "Documentation": "https://dataverse.unc.edu/dataverse/cmascenter",
+        "Contact": "cmas@unc.edu",
+        "ManagedBy": "[CMAS CENTER](https://cmascenter.org/)",
+        "UpdateFrequency": "New data is added as soon as it is available.",
+        "License": "There are no restrictions on the use of this data. US EPA License (https://pasteur.epa.gov/license/sciencehub-license.html)",
+        "Tags": [
+            "aws-pds",
+            "air quality",
+            "meteorological",
+            "geospatial",
+            "environmental",
+            "climate",
+            "model",
+            "netcdf",
+            "open source software",
+            "MPAS",
+            "cloud computing"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
         "Name": "CMAS Data Warehouse - Notifications for new data in CMAS WWLLN Lightning Data",
         "Description": "Notifications for new data in CMAS WWLLN Lightning Data",
         "ARN": "arn:aws:sns:us-east-1:703786580975:cmas-wwlln-lightning-object_created",
@@ -3041,6 +3135,36 @@
         "Name": "CMAS Data Warehouse - Notifications for new data in MPAS-CMAQ Input Data",
         "Description": "Notifications for new data in MPAS-CMAQ Input Data",
         "ARN": "arn:aws:sns:us-east-1:703786580975:mpas-cmaq-object_created",
+        "Region": "us-east-1",
+        "Type": "SNS Topic",
+        "Explore": null,
+        "Documentation": "https://dataverse.unc.edu/dataverse/cmascenter",
+        "Contact": "cmas@unc.edu",
+        "ManagedBy": "[CMAS CENTER](https://cmascenter.org/)",
+        "UpdateFrequency": "New data is added as soon as it is available.",
+        "License": "There are no restrictions on the use of this data. US EPA License (https://pasteur.epa.gov/license/sciencehub-license.html)",
+        "Tags": [
+            "aws-pds",
+            "air quality",
+            "meteorological",
+            "geospatial",
+            "environmental",
+            "climate",
+            "model",
+            "netcdf",
+            "open source software",
+            "MPAS",
+            "cloud computing"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "CMAS Data Warehouse - Notifications for new data in NEMO 1km Emissions Data for CONUS 2017",
+        "Description": "Notifications for new data in NEMO 1km Emissions Data for CONUS 2017",
+        "ARN": "arn:aws:sns:us-east-1:703786580975:nemo-1km-emissions-data-object_created",
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
@@ -11374,12 +11498,10 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region)",
         "Description": "GBIF species occurrence data in Parquet format (af-south-1 region)",
-        "ARN": "arn:aws:s3:::gbif-open-data-af-south-1",
+        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-af-south-1-object_created",
         "Region": "af-south-1",
-        "Type": "S3 Bucket",
-        "Explore": [
-            "[Browse bucket](https://gbif-open-data-af-south-1.s3.af-south-1.amazonaws.com/index.html)"
-        ],
+        "Type": "SNS Topic",
+        "Explore": null,
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
@@ -11401,10 +11523,12 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region)",
         "Description": "GBIF species occurrence data in Parquet format (af-south-1 region)",
-        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-af-south-1-object_created",
+        "ARN": "arn:aws:s3:::gbif-open-data-af-south-1",
         "Region": "af-south-1",
-        "Type": "SNS Topic",
-        "Explore": null,
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[Browse bucket](https://gbif-open-data-af-south-1.s3.af-south-1.amazonaws.com/index.html)"
+        ],
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
@@ -11478,12 +11602,10 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (eu-central-1 region)",
         "Description": "GBIF species occurrence data in Parquet format (eu-central-1 region)",
-        "ARN": "arn:aws:s3:::gbif-open-data-eu-central-1",
+        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-eu-central-1-object_created",
         "Region": "eu-central-1",
-        "Type": "S3 Bucket",
-        "Explore": [
-            "[Browse bucket](https://gbif-open-data-eu-central-1.s3.eu-central-1.amazonaws.com/index.html)"
-        ],
+        "Type": "SNS Topic",
+        "Explore": null,
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
@@ -11505,10 +11627,12 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (eu-central-1 region)",
         "Description": "GBIF species occurrence data in Parquet format (eu-central-1 region)",
-        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-eu-central-1-object_created",
+        "ARN": "arn:aws:s3:::gbif-open-data-eu-central-1",
         "Region": "eu-central-1",
-        "Type": "SNS Topic",
-        "Explore": null,
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[Browse bucket](https://gbif-open-data-eu-central-1.s3.eu-central-1.amazonaws.com/index.html)"
+        ],
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
@@ -11582,12 +11706,10 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (us-east-1 region)",
         "Description": "GBIF species occurrence data in Parquet format (us-east-1 region)",
-        "ARN": "arn:aws:s3:::gbif-open-data-us-east-1",
+        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-us-east-1-object_created",
         "Region": "us-east-1",
-        "Type": "S3 Bucket",
-        "Explore": [
-            "[Browse bucket](https://gbif-open-data-us-east-1.s3.us-east-1.amazonaws.com/index.html)"
-        ],
+        "Type": "SNS Topic",
+        "Explore": null,
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
@@ -11609,10 +11731,12 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (us-east-1 region)",
         "Description": "GBIF species occurrence data in Parquet format (us-east-1 region)",
-        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-us-east-1-object_created",
+        "ARN": "arn:aws:s3:::gbif-open-data-us-east-1",
         "Region": "us-east-1",
-        "Type": "SNS Topic",
-        "Explore": null,
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[Browse bucket](https://gbif-open-data-us-east-1.s3.us-east-1.amazonaws.com/index.html)"
+        ],
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
