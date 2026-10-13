@@ -181188,7 +181188,7 @@
         "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
-        "UpdateFrequency": "NOAA GEFS forecast, 35 day: Forecasts initialized every 24 hours; NOAA GEFS analysis: 3.0 hours",
+        "UpdateFrequency": "NOAA GEFS forecast, 35 day: Forecasts initialized every 24 hours; NOAA GEFS analysis: 3.0 hours; NOAA GEFS analysis, 0.25 degree, virtual: 3 hours; NOAA GEFS forecast, 10 day, 0.25 degree, virtual: Forecasts initialized every 6 hours; NOAA GEFS forecast, 16 day, 0.5 degree, virtual: Forecasts initialized every 6 hours; NOAA GEFS forecast, 35 day, 0.5 degree, virtual: Forecasts initialized every 24 hours",
         "License": "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)",
         "Tags": [
             "aws-pds",
@@ -181214,7 +181214,7 @@
         "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
-        "UpdateFrequency": "NOAA GEFS forecast, 35 day: Forecasts initialized every 24 hours; NOAA GEFS analysis: 3.0 hours",
+        "UpdateFrequency": "NOAA GEFS forecast, 35 day: Forecasts initialized every 24 hours; NOAA GEFS analysis: 3.0 hours; NOAA GEFS analysis, 0.25 degree, virtual: 3 hours; NOAA GEFS forecast, 10 day, 0.25 degree, virtual: Forecasts initialized every 6 hours; NOAA GEFS forecast, 16 day, 0.5 degree, virtual: Forecasts initialized every 6 hours; NOAA GEFS forecast, 35 day, 0.5 degree, virtual: Forecasts initialized every 24 hours",
         "License": "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)",
         "Tags": [
             "aws-pds",
@@ -181242,7 +181242,7 @@
         "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
-        "UpdateFrequency": "NOAA GFS analysis: 1 hour; NOAA GFS forecast: Forecasts initialized every 6 hours",
+        "UpdateFrequency": "NOAA GFS analysis: 1 hour; NOAA GFS forecast: Forecasts initialized every 6 hours; NOAA GFS analysis, virtual: 1 hour; NOAA GFS forecast, virtual: Forecasts initialized every 6 hours",
         "License": "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)",
         "Tags": [
             "aws-pds",
@@ -181268,7 +181268,7 @@
         "Documentation": "https://dynamical.org/catalog/",
         "Contact": "feedback@dynamical.org",
         "ManagedBy": "[dynamical.org](https://dynamical.org)",
-        "UpdateFrequency": "NOAA GFS analysis: 1 hour; NOAA GFS forecast: Forecasts initialized every 6 hours",
+        "UpdateFrequency": "NOAA GFS analysis: 1 hour; NOAA GFS forecast: Forecasts initialized every 6 hours; NOAA GFS analysis, virtual: 1 hour; NOAA GFS forecast, virtual: Forecasts initialized every 6 hours",
         "License": "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)",
         "Tags": [
             "aws-pds",
