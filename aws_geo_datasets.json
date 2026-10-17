@@ -8691,8 +8691,8 @@
         "ControlledAccess": null
     },
     {
-        "Name": "ECMWF IFS Analysis N320 - Beyond Weather Icechunk Zarr - IFS operational analysis 2011-2024, 6-hourly, N320 reduced Gaussian grid, Zarr v3 in an Icechunk repository",
-        "Description": "IFS operational analysis 2011-2024, 6-hourly, N320 reduced Gaussian grid, Zarr v3 in an Icechunk repository",
+        "Name": "ECMWF IFS Analysis N320 - Beyond Weather Icechunk Zarr - IFS operational analysis 2011-2026, 6-hourly, N320 reduced Gaussian grid, Zarr v3 in an Icechunk repository",
+        "Description": "IFS operational analysis 2011-2026, 6-hourly, N320 reduced Gaussian grid, Zarr v3 in an Icechunk repository",
         "ARN": "arn:aws:s3:::beyond-weather-ecmwf-ifs-analysis",
         "Region": "us-east-2",
         "Type": "S3 Bucket",
@@ -8702,8 +8702,8 @@
         "Documentation": "https://github.com/Beyond-Weather-Git/open-data-examples/blob/main/ifs-analysis-n320/README.md",
         "Contact": "https://github.com/Beyond-Weather-Git/open-data-examples/issues",
         "ManagedBy": "[Beyond Weather](https://beyond-weather.com)",
-        "UpdateFrequency": "Not currently updated. The archive covers 2011-01-01 to 2024-12-31.",
-        "License": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/),following the [ECMWF terms of use](https://apps.ecmwf.int/datasets/licences/general/).Copyright \u00a9 2011-2024 European Centre for Medium-Range Weather Forecasts (ECMWF). Source: www.ecmwf.int.ECMWF does not accept any liability whatsoever for any error or omission in the data, their availability,or for any loss or damage arising from their use. Modified by Beyond Weather: selection of variables andlevels, conversion from GRIB to Icechunk Zarr, and lossy bit rounding.",
+        "UpdateFrequency": "Not currently updated. The archive covers 2011-01-01 to 2026-09-30.",
+        "License": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/),following the [ECMWF terms of use](https://apps.ecmwf.int/datasets/licences/general/).Copyright \u00a9 2011-2026 European Centre for Medium-Range Weather Forecasts (ECMWF). Source: www.ecmwf.int.ECMWF does not accept any liability whatsoever for any error or omission in the data, their availability,or for any loss or damage arising from their use. Modified by Beyond Weather: selection of variables andlevels, interpolation to the N320 grid by ECMWF MARS, conversion from GRIB to Icechunk Zarr, renaming ofvariables, and lossy bit rounding. Beyond Weather provides its modifications and hosting as-is, withoutwarranty, to the fullest extent permitted by law. This modified dataset is not endorsed by, sponsored byor affiliated with ECMWF.",
         "Tags": [
             "aws-pds",
             "weather",
@@ -8729,8 +8729,8 @@
         "Documentation": "https://github.com/Beyond-Weather-Git/open-data-examples/blob/main/ifs-analysis-n320/README.md",
         "Contact": "https://github.com/Beyond-Weather-Git/open-data-examples/issues",
         "ManagedBy": "[Beyond Weather](https://beyond-weather.com)",
-        "UpdateFrequency": "Not currently updated. The archive covers 2011-01-01 to 2024-12-31.",
-        "License": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/),following the [ECMWF terms of use](https://apps.ecmwf.int/datasets/licences/general/).Copyright \u00a9 2011-2024 European Centre for Medium-Range Weather Forecasts (ECMWF). Source: www.ecmwf.int.ECMWF does not accept any liability whatsoever for any error or omission in the data, their availability,or for any loss or damage arising from their use. Modified by Beyond Weather: selection of variables andlevels, conversion from GRIB to Icechunk Zarr, and lossy bit rounding.",
+        "UpdateFrequency": "Not currently updated. The archive covers 2011-01-01 to 2026-09-30.",
+        "License": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/),following the [ECMWF terms of use](https://apps.ecmwf.int/datasets/licences/general/).Copyright \u00a9 2011-2026 European Centre for Medium-Range Weather Forecasts (ECMWF). Source: www.ecmwf.int.ECMWF does not accept any liability whatsoever for any error or omission in the data, their availability,or for any loss or damage arising from their use. Modified by Beyond Weather: selection of variables andlevels, interpolation to the N320 grid by ECMWF MARS, conversion from GRIB to Icechunk Zarr, renaming ofvariables, and lossy bit rounding. Beyond Weather provides its modifications and hosting as-is, withoutwarranty, to the fullest extent permitted by law. This modified dataset is not endorsed by, sponsored byor affiliated with ECMWF.",
         "Tags": [
             "aws-pds",
             "weather",
