@@ -1836,6 +1836,54 @@
         "ControlledAccess": null
     },
     {
+        "Name": "CCRS MODIS Clear-Sky Composites over Canada | Composites MODIS sous ciel d\u00e9gag\u00e9 du CCT couvrant le Canada - CCRS MODIS Clear-Sky Composites, Cloud Optimized GeoTIFF (COG) images",
+        "Description": "CCRS MODIS Clear-Sky Composites, Cloud Optimized GeoTIFF (COG) images",
+        "ARN": "arn:aws:s3:::ccrs-modis-composite",
+        "Region": "ca-central-1",
+        "Type": "S3 Bucket",
+        "Explore": null,
+        "Documentation": "https://data.eodms-sgdot.nrcan-rncan.gc.ca/public/CCRS/Trishchenko_MODIS_Albedo",
+        "Contact": "alexander.trichtchenko@nrcan-rncan.gc.ca",
+        "ManagedBy": "Canada Centre for Remote Sensing (CCRS), Canada Centre for Mapping and Earth Observation (CCMEO), Department of Natural Resources Canada (NRCan) https://natural-resources.canada.ca/science-data/science-research/research-centres/canada-centre-remote-sensing https://natural-resources.canada.ca/science-data/science-research/research-centres/canada-centre-mapping-earth-observation",
+        "UpdateFrequency": "Semi-annually, until the end of MODIS operations Deux fois par an, jusqu'\u00e0 la fin des op\u00e9rations MODIS",
+        "License": "Creative Commons Licence. Creative Commons BY 4.0 https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "analysis ready data",
+            "cog",
+            "earth observation",
+            "satellite imagery"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "CCRS MODIS Clear-Sky Composites over Canada | Composites MODIS sous ciel d\u00e9gag\u00e9 du CCT couvrant le Canada - Notifications for new CCRS MODIS Clear-Sky Composites data",
+        "Description": "Notifications for new CCRS MODIS Clear-Sky Composites data",
+        "ARN": "arn:aws:sns:ca-central-1:675987781521:ccrs-modis-composite-object_created",
+        "Region": "ca-central-1",
+        "Type": "SNS Topic",
+        "Explore": null,
+        "Documentation": "https://data.eodms-sgdot.nrcan-rncan.gc.ca/public/CCRS/Trishchenko_MODIS_Albedo",
+        "Contact": "alexander.trichtchenko@nrcan-rncan.gc.ca",
+        "ManagedBy": "Canada Centre for Remote Sensing (CCRS), Canada Centre for Mapping and Earth Observation (CCMEO), Department of Natural Resources Canada (NRCan) https://natural-resources.canada.ca/science-data/science-research/research-centres/canada-centre-remote-sensing https://natural-resources.canada.ca/science-data/science-research/research-centres/canada-centre-mapping-earth-observation",
+        "UpdateFrequency": "Semi-annually, until the end of MODIS operations Deux fois par an, jusqu'\u00e0 la fin des op\u00e9rations MODIS",
+        "License": "Creative Commons Licence. Creative Commons BY 4.0 https://creativecommons.org/licenses/by/4.0/",
+        "Tags": [
+            "aws-pds",
+            "analysis ready data",
+            "cog",
+            "earth observation",
+            "satellite imagery"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
         "Name": "CCRS MODIS albedo over Canada | Alb\u00e9do MODIS du CCT couvrant le Canada - CCRS MODIS Albedo, Cloud Optimized GeoTIFF (COG) images",
         "Description": "CCRS MODIS Albedo, Cloud Optimized GeoTIFF (COG) images",
         "ARN": "arn:aws:s3:::ccrs-modis-albedo",
@@ -11627,33 +11675,6 @@
     {
         "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region)",
         "Description": "GBIF species occurrence data in Parquet format (af-south-1 region)",
-        "ARN": "arn:aws:s3:::gbif-open-data-af-south-1",
-        "Region": "af-south-1",
-        "Type": "S3 Bucket",
-        "Explore": [
-            "[Browse bucket](https://gbif-open-data-af-south-1.s3.af-south-1.amazonaws.com/index.html)"
-        ],
-        "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
-        "Contact": "helpdesk@gbif.org",
-        "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
-        "UpdateFrequency": "Snapshots of GBIF are taken on a monthly basis",
-        "License": "[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) under the GBIF [terms of use](https://www.gbif.org/terms).",
-        "Tags": [
-            "aws-pds",
-            "earth observation",
-            "biodiversity",
-            "bioinformatics",
-            "conservation",
-            "life sciences"
-        ],
-        "RequesterPays": null,
-        "Host": null,
-        "AccountRequired": null,
-        "ControlledAccess": null
-    },
-    {
-        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region)",
-        "Description": "GBIF species occurrence data in Parquet format (af-south-1 region)",
         "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-af-south-1-object_created",
         "Region": "af-south-1",
         "Type": "SNS Topic",
@@ -11677,12 +11698,14 @@
         "ControlledAccess": null
     },
     {
-        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
-        "Description": "GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
-        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-ap-southeast-2-object_created",
-        "Region": "ap-southeast-2",
-        "Type": "SNS Topic",
-        "Explore": null,
+        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (af-south-1 region)",
+        "Description": "GBIF species occurrence data in Parquet format (af-south-1 region)",
+        "ARN": "arn:aws:s3:::gbif-open-data-af-south-1",
+        "Region": "af-south-1",
+        "Type": "S3 Bucket",
+        "Explore": [
+            "[Browse bucket](https://gbif-open-data-af-south-1.s3.af-south-1.amazonaws.com/index.html)"
+        ],
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
@@ -11729,10 +11752,10 @@
         "ControlledAccess": null
     },
     {
-        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (eu-central-1 region)",
-        "Description": "GBIF species occurrence data in Parquet format (eu-central-1 region)",
-        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-eu-central-1-object_created",
-        "Region": "eu-central-1",
+        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
+        "Description": "GBIF species occurrence data in Parquet format (ap-southeast-2 region)",
+        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-ap-southeast-2-object_created",
+        "Region": "ap-southeast-2",
         "Type": "SNS Topic",
         "Explore": null,
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
@@ -11762,6 +11785,31 @@
         "Explore": [
             "[Browse bucket](https://gbif-open-data-eu-central-1.s3.eu-central-1.amazonaws.com/index.html)"
         ],
+        "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
+        "Contact": "helpdesk@gbif.org",
+        "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
+        "UpdateFrequency": "Snapshots of GBIF are taken on a monthly basis",
+        "License": "[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) under the GBIF [terms of use](https://www.gbif.org/terms).",
+        "Tags": [
+            "aws-pds",
+            "earth observation",
+            "biodiversity",
+            "bioinformatics",
+            "conservation",
+            "life sciences"
+        ],
+        "RequesterPays": null,
+        "Host": null,
+        "AccountRequired": null,
+        "ControlledAccess": null
+    },
+    {
+        "Name": "Global Biodiversity Information Facility (GBIF) Species Occurrences - GBIF species occurrence data in Parquet format (eu-central-1 region)",
+        "Description": "GBIF species occurrence data in Parquet format (eu-central-1 region)",
+        "ARN": "arn:aws:sns:af-south-1:288719126026:gbif-open-data-eu-central-1-object_created",
+        "Region": "eu-central-1",
+        "Type": "SNS Topic",
+        "Explore": null,
         "Documentation": "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org).",
         "Contact": "helpdesk@gbif.org",
         "ManagedBy": "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))",
@@ -185320,7 +185368,7 @@
         "Explore": [
             "[Browse Bucket](https://noaa-nos-cora-pds.s3.amazonaws.com/index.html)"
         ],
-        "Documentation": "- https://noaa-nos-cora-pds.s3.amazonaws.com/README.md- https://noaa-nos-cora-pds.s3.amazonaws.com/metadata.txt- https://repository.library.noaa.gov/view/noaa/66833",
+        "Documentation": "- Known Issues, Change Log, and more: https://noaa-nos-cora-pds.s3.amazonaws.com/README- Metadata Catalog: https://noaa-nos-cora-pds.s3.amazonaws.com/metadata.txt- Technical Report: https://repository.library.noaa.gov/view/noaa/66833",
         "Contact": "CO-OPS.UserServices@noaa.gov",
         "ManagedBy": "[NOAA\u2019s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/about_us.html)",
         "UpdateFrequency": "Intermittent.",
@@ -185347,7 +185395,7 @@
         "Region": "us-east-1",
         "Type": "SNS Topic",
         "Explore": null,
-        "Documentation": "- https://noaa-nos-cora-pds.s3.amazonaws.com/README.md- https://noaa-nos-cora-pds.s3.amazonaws.com/metadata.txt- https://repository.library.noaa.gov/view/noaa/66833",
+        "Documentation": "- Known Issues, Change Log, and more: https://noaa-nos-cora-pds.s3.amazonaws.com/README- Metadata Catalog: https://noaa-nos-cora-pds.s3.amazonaws.com/metadata.txt- Technical Report: https://repository.library.noaa.gov/view/noaa/66833",
         "Contact": "CO-OPS.UserServices@noaa.gov",
         "ManagedBy": "[NOAA\u2019s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/about_us.html)",
         "UpdateFrequency": "Intermittent.",
