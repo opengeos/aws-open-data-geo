@@ -9749,13 +9749,17 @@
         "Region": "us-west-2",
         "Type": "S3 Bucket",
         "Explore": [
-            "[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)"
+            "[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F)",
+            "[Repository README](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/README.md)",
+            "[Release catalog, machine-readable: status, successor, upgrades and dictionaries for every release](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/catalog.json)",
+            "[Known issues, including those that affect published results](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/KNOWN_ISSUES.md)",
+            "[Guide for automated consumers: release selection, key construction and silent-failure cases](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/AGENT_GUIDE.md)"
         ],
-        "Documentation": "https://www.nrel.gov/buildings/end-use-load-profiles.html",
-        "Contact": "ComStock@nrel.gov and ResStock@nrel.gov",
-        "ManagedBy": "[National Laboratory of the Rockies](https://www.nrel.gov/)",
-        "UpdateFrequency": "Twice per year",
-        "License": "[ComStock License](https://github.com/NREL/ComStock/blob/main/LICENSE.txt) and [ResStock License](https://github.com/NREL/resstock/blob/main/LICENSE.md)",
+        "Documentation": "https://www.nlr.gov/buildings/end-use-load-profiles.html",
+        "Contact": "ComStock@nlr.gov and ResStock@nlr.gov",
+        "ManagedBy": "[National Laboratory of the Rockies](https://www.nlr.gov/)",
+        "UpdateFrequency": "Approximately twice per year for each of ResStock and ComStock",
+        "License": "[ComStock License](https://github.com/NatLabRockies/ComStock/blob/main/LICENSE.txt) and [ResStock License](https://github.com/NatLabRockies/resstock/blob/main/LICENSE.md)",
         "Tags": [
             "aws-pds",
             "climate",
@@ -9766,6 +9770,7 @@
             "metadata",
             "model",
             "open source software",
+            "parquet",
             "sustainability",
             "utilities"
         ],
@@ -187970,17 +187975,17 @@
     {
         "Name": "OpenAerialMap on AWS",
         "Description": "OpenAerialMap files and metadata",
-        "ARN": "arn:aws:s3:::oin-hotosm",
+        "ARN": "arn:aws:s3:::oin-hotosm-temp",
         "Region": "us-east-1",
         "Type": "S3 Bucket",
         "Explore": [
-            "[Browse Bucket](https://oin-hotosm.s3.amazonaws.com/)"
+            "[Browse Bucket](https://oin-hotosm-temp.s3.amazonaws.com/)"
         ],
-        "Documentation": "https://docs.openaerialmap.org/",
+        "Documentation": "https://docs.imagery.hotosm.org/",
         "Contact": "info@openaerialmap.org",
         "ManagedBy": "[Humanitarian OpenStreetMap Team](https://www.hotosm.org/)",
         "UpdateFrequency": "New imagery is added as soon as it is uploaded by community contributors.",
-        "License": "All imagery is publicly licensed CC-BY 4.0, with attribution as contributors of Open Imagery Network. All imagery is available to be traced in OpenStreetMap..",
+        "License": "All imagery is publicly licensed CC-BY 4.0, with attribution as contributors of Open Imagery Network. All imagery is available to be traced in OpenStreetMap.",
         "Tags": [
             "satellite imagery",
             "aerial imagery",
